@@ -1,0 +1,17 @@
+In file included from /usr/include/features.h:399:0,
+                 from /usr/include/time.h:27,
+                 from /tmp/Panda_Pilot_3998216_1551703763/PandaJob/pandawnutil/tracer/wrapper.c:1:
+/usr/include/gnu/stubs.h:7:27: fatal error: gnu/stubs-32.h: No such file or directory
+ # include <gnu/stubs-32.h>
+                           ^
+compilation terminated.
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find crti.o: No such file or directory
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: skipping incompatible /cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/libgcc.a when searching for -lgcc
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find -lgcc
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find -lgcc_s
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find -lc
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: skipping incompatible /cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/libgcc.a when searching for -lgcc
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find -lgcc
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find -lgcc_s
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status

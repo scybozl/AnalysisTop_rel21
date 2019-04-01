@@ -1,0 +1,1570 @@
+AtlasSetup(WARNING): Deprecased tag "notest" ignored in cmake releases
+Using AnalysisTop/21.2.61 [cmake] with platform x86_64-slc6-gcc62-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/21.2
+=== start ===
+Mon Mar  4 07:50:22 2019
+=== parameters ===
+libraries panda.0304123808.803789.lib._17303704.16751001456.lib.tgz
+runDir ./
+jobParams top-xaod UpfoldingRecoLevel.txt in.txt
+inputFiles ['DAOD_TOPQ1.12770053._000005.pool.root.1', 'DAOD_TOPQ1.12770053._000006.pool.root.1', 'DAOD_TOPQ1.12770053._000007.pool.root.1', 'DAOD_TOPQ1.12770053._000008.pool.root.1']
+scriptName 
+outputFiles {'output.root': 'panda.um.user.lscyboz.17303704._000002.output.root'}
+inputGUIDs []
+oldPrefix 
+newPrefix 
+directIn True
+usePFCTurl True
+lfcHost 
+debugFlag False
+liveLog 
+sourceURL https://aipanda011.cern.ch:25443
+inMap {}
+useAthenaPackages True
+archiveJobO 
+dbrFile 
+dbrRun -1
+notExpandDBR False
+skipInputByRetry []
+writeInputToTxt IN:in.txt
+rootVer 
+useRootCore False
+givenPFN False
+useMana False
+manaVer 
+useCMake True
+===================
+
+===== inputFiles with inMap =====
+inputFiles ['DAOD_TOPQ1.12770053._000005.pool.root.1', 'DAOD_TOPQ1.12770053._000006.pool.root.1', 'DAOD_TOPQ1.12770053._000007.pool.root.1', 'DAOD_TOPQ1.12770053._000008.pool.root.1']
+
+===== PFC from pilot =====
+<?xml version="1.0" ?>
+<!-- Edited By the PanDA Pilot -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="F6BC7C3F-C0C5-1B47-A3E9-FC5C703CCA1F">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a9/e1/DAOD_TOPQ1.12770053._000006.pool.root.1"/>
+    </physical>
+    <logical/>
+  </File>
+  <File ID="D4FDCACC-8CCF-A946-A026-82039C9DEBE8">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/cd/a1/DAOD_TOPQ1.12770053._000007.pool.root.1"/>
+    </physical>
+    <logical/>
+  </File>
+  <File ID="D536CFBD-E99E-5240-A8CD-DECC084F2A3C">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/69/8b/DAOD_TOPQ1.12770053._000008.pool.root.1"/>
+    </physical>
+    <logical/>
+  </File>
+  <File ID="4B8E7698-CBF9-A048-A534-350CED6D1A4C">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1"/>
+    </physical>
+    <logical/>
+  </File>
+  <File ID="9430ea68-644a-413b-a1fb-ee2e0f6b7c50">
+    <physical>
+      <pfn filetype="ROOT_All" name="panda.0304123808.803789.lib._17303704.16751001456.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>
+
+===== GUIDs and TURLs in PFC =====
+{'F6BC7C3F-C0C5-1B47-A3E9-FC5C703CCA1F': 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a9/e1/DAOD_TOPQ1.12770053._000006.pool.root.1', 'D4FDCACC-8CCF-A946-A026-82039C9DEBE8': 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/cd/a1/DAOD_TOPQ1.12770053._000007.pool.root.1', 'D536CFBD-E99E-5240-A8CD-DECC084F2A3C': 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/69/8b/DAOD_TOPQ1.12770053._000008.pool.root.1', '4B8E7698-CBF9-A048-A534-350CED6D1A4C': 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1', '9430ea68-644a-413b-a1fb-ee2e0f6b7c50': 'panda.0304123808.803789.lib._17303704.16751001456.lib.tgz'}
+Running in /tmp/Panda_Pilot_3998216_1551703763/PandaJob
+usr/
+usr/TopMass_13TeV_FrMu/
+usr/TopMass_13TeV_FrMu/21.2.61/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/atlas_ctest.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/mergeClids.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/cpack_install.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/mergeFiles.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/unit_test_executor.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/extractCTestTest.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/cpack_install.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/setup.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/mergeSelections.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/cpack_dbg_install.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/extractCTestBuild.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/nightly_name.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/scripts/atlas_build_run.sh.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ElementLinkVectorDict.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ExperimentalBuild.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/SerCnv_entries.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnvSimple.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ElementLinkVector_selection.xml.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/README.txt.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/NavigableDict.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnv_entries.cxx.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/Navigable_selection.xml.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnv_load.cxx.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnvMultiChan.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ReleaseData.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/atlas_export_sanitizer.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ClientCMakeLists.txt.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnv_entries.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/DataLinkDict.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ProjectConfig.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnvItemList_joboptions.py.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/CTestCustom.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/NightlyBuild.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/SerCnvSimple.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/SerCnv_entries.cxx.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ElementLink_selection.xml.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ElementLinkDict.h.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/CPackDbgRPMConfig.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/LICENSE.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/CPackOptions.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/SerCnv_load.cxx.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/ProjectConfig-version.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/PoolCnvItemList_joboptionsHdr.py.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/skeletons/DataLink_selection.xml.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/StandaloneBuild.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPhotos.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPNG.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindEigen.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findpygraphics.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindLAPACK.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHepMCAnalysis.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindQwt.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findtcmalloc.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/GaudiFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindBLAS.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootConfiguration.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindQt5.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findmysql.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCLHEP.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHerwig.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindBAT.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/SetUpMacOS.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findlwtnn.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findgraphviz.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindTauolapp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHerwig3.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findsqlite.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindLibXml2.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findsrm_ifce.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindBaurMC.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindMCTester.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindFastJet.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindQt4.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPythia6.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findigprof.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindRELAX.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindFastJetContrib.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindEvtGen.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindZLIB.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/MacroEnsureVersion.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPythonInterp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findtdaq-common.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindSoQt.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasCompilerSettings.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindJimmy.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findgmp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findqd.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHerwigpp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasInstallFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindStarlight.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindXrootd.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindEXPAT.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCoin3D.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindMadGraph.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Finddqm-common.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findblackhat.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindYODA.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindTBB.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPythia8.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findlibunwind.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindXercesC.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Finddcap.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/SearchInstalledSoftware.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootCTest.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findgfal.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHijing.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findpyanalysis.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findpytools.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHydjet.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPhotospp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindTauola.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/WriteConfigCint.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/LCGFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootTestDriver.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findyamlcpp.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindShowerDeconstruction.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCppUnit.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHepPDT.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasDictionaryFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/SetUpWindows.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CMakeCPackOptions.cmake.in
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindRivet.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHDF5.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindGMock.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findunwind.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findtdaq.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindDoxygen.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findvalgrind.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCrmc.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindNumPy.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindQMTest.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasTestFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasInternals.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findpip.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindFFTW.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindSherpa.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findcppgsl.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findpacparser.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CheckCXXCompilerFlag.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindGaudi.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindAIDA.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindThePEG.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindDavix.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootBuildOptions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/SetUpLinux.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindAlpGen.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findxz.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindLhapdf.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindSuperchic.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findkiwisolver.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findxapian.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindBoost.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AnalysisBaseFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findurllib3.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootInstallDirs.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCOOL.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHepMC.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findchardet.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findcycler.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Findidna.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCairo.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/AtlasLibraryFunctions.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindUUID.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindJava.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CaptureCommandLine.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/SearchInstalledSoftware.cmake.orig
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CMakeMacroParseArguments.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/Finddpm.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CheckCompiler.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindGSL.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPango.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCASTOR.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindMCUtils.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindOracle.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindCORAL.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootNewMacros.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindKLFitter.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindFrontier_Client.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPythonLibs.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/CTestCustom.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindHEPUtils.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/RootCPack.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindROOT.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/modules/FindPyquen.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/LCGConfig.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/LCGConfig-version.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/TopMass_13TeV_FrMuConfig-targets.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/TopMass_13TeV_FrMuConfig-targets-relwithdebinfo.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/TopMass_13TeV_FrMuConfig.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/cmake/TopMass_13TeV_FrMuConfig-version.cmake
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/packages.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/compilers.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/setup.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/ClientCMakeLists.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/ReleaseData
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/TopMass_13TeV_FrMu.rootmap
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopDataPreparation_rdict.pcm
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopDataPreparation.so
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_Online_rdict.pcm
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_Online.so
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_Parameterization_rdict.pcm
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_Parameterization.so
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_PseudoExp_rdict.pcm
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/libTopMass_13TeV_PseudoExp.so
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/env_setup.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/README.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/LICENSE.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/CMakeLists.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/Root/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/Root/LinkDef.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/Root/SamplePDF.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/Root/SampleXsection.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/Root/SampleXsectionSvc.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/TopDataPreparation/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/TopDataPreparation/SamplePDF.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/TopDataPreparation/SampleXsection.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/TopDataPreparation/SampleXsectionSvc.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/cmt/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/cmt/Makefile.Standalone
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/AMIXSection-MC11.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/PDF-MC12-8TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/README.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC12-8TeV-4gt.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC12-8TeV-Higgs.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC12-8TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC14-13TeV-dbl.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC14-13TeV-fromSusyGrp.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC14-13TeV-hqt.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/data/XSection-MC15-13TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/python/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopDataPreparation/python/getPDF.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/CMakeLists.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/README.md
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/Root/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/Root/LinkDef.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/Root/MassEventSaver.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/Root/NeutrinoWeighter.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/TopMass_13TeV_Online/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/TopMass_13TeV_Online/MassEventSaver.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/TopMass_13TeV_Online/NeutrinoWeighter.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/cmt/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/cmt/Makefile.RootCore
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/BookkeepingCode/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/BookkeepingCode/DefineSamples.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/BookkeepingCode/HelperFunctions.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/BookkeepingCode/SubmissionDict.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_Data_NOM_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_NOM_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_SYSDIL_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_SYSLJ_BTAG_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_SYSLJ_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_SYSLJ_oldQG_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TEST_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_0p98_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_0p995_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_0p99_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p005_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p01_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p02_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_0p98_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_0p995_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_0p99_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_1p005_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_1p01_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_1p02_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ConfigFiles/TopMassConfig_MC16a_TMPL_1p0_1p0_TAG70.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/FlavComp_21256_Dil.root
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/FlavComp_21256_LJ.root
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/CheckDownloadStatus.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/DownloadAllSamples.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/GridDict.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/setup.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/ForDownload/setupStatus.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/InputLists/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/InputLists/DerivationList_Data.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/InputLists/DerivationList_MC16a.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/InputLists/DerivationList_MC16d.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/InputLists/DerivationList_MC16e.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/RunSubmission.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Online/scripts/setup.sh
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/CMakeLists.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/AtlasStyle.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/CombFitPar.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/ConfigClass.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/FCN.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/FitInfo.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/LinkDef.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/MakePlots.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/Root/SepFitPar.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/AtlasStyle.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/CombFitPar.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/ConfigClass.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/FCN.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/FitInfo.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/MakePlots.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/TopMass_13TeV_Parameterization/SepFitPar.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/cmt/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/cmt/Makefile.RootCore
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/data/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/data/InputFileList_DL.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/data/InputFileList_LJ.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/data/MainConfigFile_DL
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/data/MainConfigFile_LJ
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/scripts/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/scripts/SimpleScript.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/util/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/util/RunCombFitPar.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_Parameterization/util/RunSepFitPar.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/CMakeLists.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/README.md
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/AtlasStyle.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/EvaluatePseudoExperiments.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/LinkDef.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/PseudoExperimentsFit.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/Root/PseudoExperimentsMaster.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/AtlasStyle.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/EvaluatePseudoExperiments.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/PETreeReader.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/PseudoExperimentsFit.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/TopMass_13TeV_PseudoExp/PseudoExperimentsMaster.h
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/cmt/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/cmt/Makefile.RootCore
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/share/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/share/doPseudoExperiments.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/share/doPseudoExperiments_ljets.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/util/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/util/MakeClosureTests.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/src/TopMass_13TeV_PseudoExp/util/RunPseudoExp.cxx
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/TopDataPreparation
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/TopMass_13TeV_Online
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/TopMass_13TeV_Parameterization
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/TopMass_13TeV_PseudoExp
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python/TopDataPreparation/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python/TopDataPreparation/getPDF.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python/TopDataPreparation/getPDF.pyc
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/AMIXSection-MC11.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/PDF-MC12-8TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/README.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC12-8TeV-4gt.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC12-8TeV-Higgs.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC12-8TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC14-13TeV-dbl.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC14-13TeV-fromSusyGrp.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC14-13TeV-hqt.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopDataPreparation/XSection-MC15-13TeV.data
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_Parameterization/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_Parameterization/InputFileList_DL.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_Parameterization/InputFileList_LJ.txt
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_Parameterization/MainConfigFile_DL
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_Parameterization/MainConfigFile_LJ
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_PseudoExp/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_PseudoExp/doPseudoExperiments.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data/TopMass_13TeV_PseudoExp/doPseudoExperiments_ljets.py
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunCombFitPar.exe
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunCombFitPar
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunSepFitPar.exe
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunSepFitPar
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunPseudoExp.exe
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/RunPseudoExp
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/MakeClosureTests.exe
+usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin/MakeClosureTests
+02DownloadFromGrid.py
+03LocalAnalysis.py
+04Plot.py
+10AmiYield.py
+11CrossSection.py
+DerivationTags.py
+Data_rel21.py
+setup.sh
+MC16_TOPQ1.py
+01SubmitToGrid.py
+MC16_TOPQ1.pyc
+DerivationTags.pyc
+Data_rel21.pyc
+UpfoldingRecoLevel.txt
+CMakeLists.txt
+CMake setup dir : usr/*/*/InstallArea/*
+===== make PandaTracer =====
+  m64 succeeded
+  m32 failed
+WARNING: m32 is not supported
+Log location -> /tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/fa43e897-6749-4afc-a07c-11dc81c87943/pandatracerlog.txt
+
+=== dump .//.rootrc ===
+ProofLite.Workers: 1
+
+
+=== check input files ===
+=== New inputFiles ===
+['root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1', 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a9/e1/DAOD_TOPQ1.12770053._000006.pool.root.1', 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/cd/a1/DAOD_TOPQ1.12770053._000007.pool.root.1', 'root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/69/8b/DAOD_TOPQ1.12770053._000008.pool.root.1']
+=== env variables ===
+ATLAS_LOCAL_ACM_VERSION=0.1.17
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+ATLAS_PYTHON_PILOT=/bin/python
+MANPATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/share/man:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/share/man:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/man:/usr/local/share/man:/usr/share/man
+_CONDOR_JOB_PIDS=
+ASG_TEST_FILE_MC_AFII=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/valid1.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.DAOD_PHYSVAL.e4993_s3189_r9524_AthDerivation-21.2.1.0.root
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1
+ATLAS_LOCAL_ROOT_PACOPT=
+ROOT_INCLUDE_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/libxml2:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/eigen3
+ATLAS_LOCAL_XROOTD_VERSION=4.9.0-x86_64-centos7
+AnalysisBaseExternals_VERSION=21.2.61
+MAKEFLAGS=-j1 QUICK=1 -l1
+ALRB_testPath=,,,,
+LHAPATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+TMPDIR=/tmp/condor/execute/dir_3997942
+GLOBUS_LOCATION=/usr
+ALRB_SHELL=/bin/sh
+LHAPDF_DATA_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+_CONDOR_SCRATCH_DIR=/tmp/condor/execute/dir_3997942
+ALRB_clientShell=/bin/sh
+AtlasProject=AnalysisTop
+AtlasReleaseType=stable
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+SITEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+X509_CERT_DIR=/etc/grid-security/certificates
+OSG_WN_TMP=/tmp
+ALRB_useGridSW=emi
+AtlasSetupStatus=0
+AtlasArea=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61
+LC_ALL=C
+ROOT_TTREECACHE_SIZE=1
+VIEWSDIR=/cvmfs/sft.cern.ch/lcg/views
+ATLAS_LOCAL_DAVIX_VERSION=0.7.2-x86_64-slc7
+CALIBPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/sw/DbData/GroupData:/cvmfs/atlas.cern.ch/repo/sw/database/GroupData:/eos/atlas/atlascerngroupdisk/asg-calib:/afs/cern.ch/atlas/www/GROUPS/DATABASE/GroupData:http//cern.ch/atlas-groupdata:http//atlas.web.cern.ch/Atlas/GROUPS/DATABASE/GroupData
+TDAQ_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+COPY_TOOL=OLDMOVERDEPRECATED
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+OSG_SQUID_LOCATION=squid.aglt2.org:3128
+JOBOPTSEARCHPATH=.:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions
+USER=usatlas1
+_CHIRP_DELAYED_UPDATE_PREFIX=Chirp
+OSG_SITE_WRITE=/pnfs/aglt2.org/atlasscratchdisk
+CMTCONFIG=x86_64-slc6-gcc62-opt
+LD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib64:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib64:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib:/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib
+TEMP=/tmp/condor/execute/dir_3997942
+ROOTCORE_TEST_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL
+ALRB_noGridMW=YES
+ALRB_RHVER=7
+ASETUP_PPID=3997956
+BATCH_SYSTEM=HTCondor
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+ALRB_SCRATCH=/atlas/osghome/usatlas1/.alrb
+ATLAS_FRONTIER_CONF=(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier02.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli02.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)
+ALRB_printHelpMain=
+AnalysisTop_VERSION=21.2.61
+CMAKE_NO_VERBOSE=1
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+GFORTRAN_TMPDIR=/tmp/condor/execute/dir_3997942
+_CONDOR_CHIRP_CONFIG=/tmp/condor/execute/dir_3997942/.chirp.config
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+DQ2_LOCAL_SITE_ID=AGLT2_SCRATCHDISK
+ATLAS_LOCAL_AREA=/atlas/data08/OSG/APPSL6/atlas_app/local
+OSG_SITE_READ=/pnfs/aglt2.org/atlasscratchdisk
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26/AtlasSetup
+CONDORCE_COLLECTOR_HOST=gate01.aglt2.org:9619
+FRONTIER_ID=[17303704_4265075871]
+ATLAS_LOCAL_RCSETUP_VERSION=00-04-18
+AnalysisTop_SET_UP=1
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26
+FRONTIER_LOG_LEVEL=warning
+FACTORYUSER=autopyfactory
+TopMass_13TeV_FrMu_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasSetupVersion=AtlasSetup-01-00-26
+ALRB_RELOCATECVMFS=NO
+ALRB_availableTools= acm adctools agis art asetup atlantis boost cmake cppcheck davix eiclient emi fax fftw ganga gcc gccxml git gitlab gsl hdf5 lcgenv pacman panda png pod pyami python rcsetup root rucio sft swmgr tbb views xcache xrootd
+ROOTCORE_RELEASE_SERIES=25
+APFCID=2033872.12
+PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Cmake/3.11.0/Linux-x86_64/bin:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/usr/local/bin:/bin:/usr/bin
+PANDA_JSID=BNL-gridui16-jhover
+ATLAS_DB_AREA=/cvmfs/atlas.cern.ch/repo/sw/database
+_CONDOR_ANCESTOR_3997942=3997956:1551703741:261552357
+AtlasSetupSiteCMake=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.configCMake/.asetup.site
+ALRB_OSMAJORVER=7
+AnalysisTop_PLATFORM=x86_64-slc6-gcc62-opt
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+OSG_DATA=/atlas/data08/OSG/DATA
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5
+ALRB_OSTYPE=Linux
+PWD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir
+OSG_APP=/atlas/data08/OSG/APPSL6
+GTAG=http://gridui16.usatlas.bnl.gov:25880/2019-03-04/ANALY_AGLT2_SL7-condor-gate01.aglt2.org/2033872.12.out
+RUCIO_AUTH_TYPE=x509_proxy
+AtlasVersion=21.2.61
+FACTORYQUEUE=ANALY_AGLT2_SL7-condor-gate01.aglt2.org
+LANG=C
+VOMS_PROXY_INFO_DONT_VERIFY_AC=true
+_CONDOR_WRAPPER_ERROR_FILE=/tmp/condor/execute/dir_3997942/.job_wrapper_failure
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+DATAPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/eos/atlas/atlascerngroupdisk/data-art/grid-input
+ROOTCORE_TEST_FILE=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ALRB_tmpScratch=/tmp/condor/execute/dir_3997942/usatlas1/.alrb
+ALRB_requestedVersions=cmake:3.11.0  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  davix:0.7.2-x86_64-slc7 xrootd:4.9.0-x86_64-centos7 rucio:1.18.5 emi:4.0.3-1v3  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  
+ALRB_allowSL6onSL5=NO
+ATLAS_LOCAL_ASETUP_VERSION=V01-00-26
+XMLPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML
+TopMass_13TeV_FrMu_VERSION=21.2.61
+PYTHONHOME=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+AnalysisBaseExternals_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+PandaID=4265075871
+_CONDOR_SLOT=slot3
+AnalysisBaseExternals_EXTONLY_SET_UP=1
+ATLAS_POOLCOND_PATH=/cvmfs/atlas-condb.cern.ch/repo/conditions
+DQ2_ENDUSER_SETUP=True
+OSG_GRID=/etc/osg/wn-client/
+_CONDOR_ANCESTOR_1965663=3997942:1551703741:3237580866
+ALRB_gridType=none
+ALRB_availableToolsPost= advanced diagnostics helpme printmenu showversions
+SSL_CERT_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/etc/grid-security-emi/certificates
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GAUDI_ROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/GAUDI/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CXX=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/g++
+OSG_HOSTNAME=gate01.aglt2.org
+DBRELEASE_OVERRIDE=current
+ATLAS_LOCAL_DAVIX_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+APFFID=BNL-gridui16-jhover
+HOME=/atlas/osghome/usatlas1
+SHLVL=3
+TopMass_13TeV_FrMu_DIR=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GFORTRAN_UNBUFFERED_ALL=y
+_CONDOR_MACHINE_AD=/tmp/condor/execute/dir_3997942/.machine.ad
+OSG_STORAGE_ELEMENT=True
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ALRB_cvmfs_sft_repo=/cvmfs/sft.cern.ch/lcg
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+AnalysisBaseExternals_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasBuildBranch=21.2
+ALRB_ACM_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/acm/0.1.17/acm
+X509_USER_PROXY=/tmp/condor/execute/dir_3997942/jhovercernprodProxy
+PilotHomeDir=/tmp/condor/execute/dir_3997942
+rcSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ATLAS_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+FC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gfortran
+DYLD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib
+ROOTCOREDIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+INDS=mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e5458_s3126_r9364_r9315_p3404
+RUCIO_ACCOUNT=pilot
+OSG_DEFAULT_SE=head01.aglt2.org
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+TMP=/tmp/condor/execute/dir_3997942
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/lib:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.7
+LCG_GFAL_INFOSYS=is.grid.iu.edu:2170
+AtlasBuildStamp=2019-02-01T0350
+ATLAS_LOCAL_CMAKE_VERSION=3.11.0
+TopMass_13TeV_FrMu_SET_UP=1
+OSG_SITE_NAME=AGLT2_PROD
+ATLAS_CONDDB=
+AnalysisTop_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ATLAS_RELEASEDATA=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/atlas/offline/ReleaseData
+COMPILER_PATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6
+ROOTCORE_NCPUS=1
+PANDA_RESOURCE=ANALY_AGLT2_SL7-condor
+ALRB_DAVIX_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+OMP_NUM_THREADS=1
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+AnalysisBaseExternals_RELONLY_SET_UP=1
+LCG_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases
+PANDA_SITE_NAME=ANALY_AGLT2_SL7-condor
+ATHENA_PROC_NUMBER_JOB=1
+_CONDOR_JOB_AD=/tmp/condor/execute/dir_3997942/.job.ad
+RUCIO_APPID=panda-client-0.6.15-jedi-run
+_CONDOR_ANCESTOR_1965627=1965663:1551049315:804187927
+XRDSYS=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+CMAKE_PREFIX_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ASG_TEST_FILE_MC=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ASG_TEST_FILE_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/data16_13TeV.00311321.physics_Main.DAOD_PHYSVAL.r9264_AthDerivation-21.2.1.0.root
+CC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gcc
+BINARY_TAG=x86_64-slc6-gcc62-opt
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+CVMFSBASE=/cvmfs
+AtlasBaseDir=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+PanDA_TaskID=17303704
+FRONTIER_SERVER=(serverurl=http://frontier-atlas.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas1.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas2.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas3.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier05.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)(proxyurl=http://atlasbpfrontier.fnal.gov:3127)(proxyurl=http://atlasbpfrontier.cern.ch:3127)
+ROOTCOREBIN=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CMSSW_VERSION=[17303704_4265075871]
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+SITE_NAME=AGLT2
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2
+_CONDOR_JOB_IWD=/tmp/condor/execute/dir_3997942
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+VO_ATLAS_AGIS_SITE=AGLT2
+ATLAS_LOCAL_RUCIOCLIENTS_VERSION=1.18.5
+ALRB_availableToolsPre= lsetup
+_=/bin/env
+ATLAS_LOCAL_ACM_VERSION=0.1.17
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+ATLAS_PYTHON_PILOT=/bin/python
+MANPATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/share/man:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/share/man:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/man:/usr/local/share/man:/usr/share/man
+_CONDOR_JOB_PIDS=
+ASG_TEST_FILE_MC_AFII=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/valid1.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.DAOD_PHYSVAL.e4993_s3189_r9524_AthDerivation-21.2.1.0.root
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1
+ATLAS_LOCAL_ROOT_PACOPT=
+ROOT_INCLUDE_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/libxml2:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/eigen3
+ATLAS_LOCAL_XROOTD_VERSION=4.9.0-x86_64-centos7
+AnalysisBaseExternals_VERSION=21.2.61
+MAKEFLAGS=-j1 QUICK=1 -l1
+ALRB_testPath=,,,,
+LHAPATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+TMPDIR=/tmp/condor/execute/dir_3997942
+GLOBUS_LOCATION=/usr
+ALRB_SHELL=/bin/sh
+LD_PRELOAD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/fa43e897-6749-4afc-a07c-11dc81c87943/$LIB/wrapper.so
+LHAPDF_DATA_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+_CONDOR_SCRATCH_DIR=/tmp/condor/execute/dir_3997942
+ALRB_clientShell=/bin/sh
+AtlasProject=AnalysisTop
+AtlasReleaseType=stable
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+SITEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+X509_CERT_DIR=/etc/grid-security/certificates
+OSG_WN_TMP=/tmp
+ALRB_useGridSW=emi
+AtlasSetupStatus=0
+AtlasArea=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61
+LC_ALL=C
+ROOT_TTREECACHE_SIZE=1
+VIEWSDIR=/cvmfs/sft.cern.ch/lcg/views
+ATLAS_LOCAL_DAVIX_VERSION=0.7.2-x86_64-slc7
+CALIBPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/sw/DbData/GroupData:/cvmfs/atlas.cern.ch/repo/sw/database/GroupData:/eos/atlas/atlascerngroupdisk/asg-calib:/afs/cern.ch/atlas/www/GROUPS/DATABASE/GroupData:http//cern.ch/atlas-groupdata:http//atlas.web.cern.ch/Atlas/GROUPS/DATABASE/GroupData
+TDAQ_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+COPY_TOOL=OLDMOVERDEPRECATED
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+OSG_SQUID_LOCATION=squid.aglt2.org:3128
+JOBOPTSEARCHPATH=.:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions
+USER=usatlas1
+_CHIRP_DELAYED_UPDATE_PREFIX=Chirp
+OSG_SITE_WRITE=/pnfs/aglt2.org/atlasscratchdisk
+CMTCONFIG=x86_64-slc6-gcc62-opt
+LD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib64:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib64:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib:/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib
+TEMP=/tmp/condor/execute/dir_3997942
+ROOTCORE_TEST_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL
+ALRB_noGridMW=YES
+ALRB_RHVER=7
+ASETUP_PPID=3997956
+BATCH_SYSTEM=HTCondor
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+ALRB_SCRATCH=/atlas/osghome/usatlas1/.alrb
+ATLAS_FRONTIER_CONF=(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier02.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli02.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)
+ALRB_printHelpMain=
+AnalysisTop_VERSION=21.2.61
+CMAKE_NO_VERBOSE=1
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+GFORTRAN_TMPDIR=/tmp/condor/execute/dir_3997942
+_CONDOR_CHIRP_CONFIG=/tmp/condor/execute/dir_3997942/.chirp.config
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+DQ2_LOCAL_SITE_ID=AGLT2_SCRATCHDISK
+ATLAS_LOCAL_AREA=/atlas/data08/OSG/APPSL6/atlas_app/local
+OSG_SITE_READ=/pnfs/aglt2.org/atlasscratchdisk
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26/AtlasSetup
+CONDORCE_COLLECTOR_HOST=gate01.aglt2.org:9619
+FRONTIER_ID=[17303704_4265075871]
+ATLAS_LOCAL_RCSETUP_VERSION=00-04-18
+AnalysisTop_SET_UP=1
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26
+FRONTIER_LOG_LEVEL=warning
+FACTORYUSER=autopyfactory
+TopMass_13TeV_FrMu_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasSetupVersion=AtlasSetup-01-00-26
+ALRB_RELOCATECVMFS=NO
+ALRB_availableTools= acm adctools agis art asetup atlantis boost cmake cppcheck davix eiclient emi fax fftw ganga gcc gccxml git gitlab gsl hdf5 lcgenv pacman panda png pod pyami python rcsetup root rucio sft swmgr tbb views xcache xrootd
+ROOTCORE_RELEASE_SERIES=25
+APFCID=2033872.12
+PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Cmake/3.11.0/Linux-x86_64/bin:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/usr/local/bin:/bin:/usr/bin
+PANDA_JSID=BNL-gridui16-jhover
+ATLAS_DB_AREA=/cvmfs/atlas.cern.ch/repo/sw/database
+_CONDOR_ANCESTOR_3997942=3997956:1551703741:261552357
+AtlasSetupSiteCMake=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.configCMake/.asetup.site
+ALRB_OSMAJORVER=7
+AnalysisTop_PLATFORM=x86_64-slc6-gcc62-opt
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+OSG_DATA=/atlas/data08/OSG/DATA
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5
+ALRB_OSTYPE=Linux
+PWD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir
+OSG_APP=/atlas/data08/OSG/APPSL6
+GTAG=http://gridui16.usatlas.bnl.gov:25880/2019-03-04/ANALY_AGLT2_SL7-condor-gate01.aglt2.org/2033872.12.out
+PANDA_PRELOAD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/fa43e897-6749-4afc-a07c-11dc81c87943/$LIB/wrapper.so
+RUCIO_AUTH_TYPE=x509_proxy
+AtlasVersion=21.2.61
+FACTORYQUEUE=ANALY_AGLT2_SL7-condor-gate01.aglt2.org
+LANG=C
+VOMS_PROXY_INFO_DONT_VERIFY_AC=true
+_CONDOR_WRAPPER_ERROR_FILE=/tmp/condor/execute/dir_3997942/.job_wrapper_failure
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+DATAPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/eos/atlas/atlascerngroupdisk/data-art/grid-input
+ROOTCORE_TEST_FILE=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ALRB_tmpScratch=/tmp/condor/execute/dir_3997942/usatlas1/.alrb
+ALRB_requestedVersions=cmake:3.11.0  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  davix:0.7.2-x86_64-slc7 xrootd:4.9.0-x86_64-centos7 rucio:1.18.5 emi:4.0.3-1v3  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  
+ALRB_allowSL6onSL5=NO
+ATLAS_LOCAL_ASETUP_VERSION=V01-00-26
+XMLPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML
+TopMass_13TeV_FrMu_VERSION=21.2.61
+PYTHONHOME=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+AnalysisBaseExternals_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+PandaID=4265075871
+_CONDOR_SLOT=slot3
+AnalysisBaseExternals_EXTONLY_SET_UP=1
+ATLAS_POOLCOND_PATH=/cvmfs/atlas-condb.cern.ch/repo/conditions
+DQ2_ENDUSER_SETUP=True
+OSG_GRID=/etc/osg/wn-client/
+_CONDOR_ANCESTOR_1965663=3997942:1551703741:3237580866
+ALRB_gridType=none
+ALRB_availableToolsPost= advanced diagnostics helpme printmenu showversions
+SSL_CERT_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/etc/grid-security-emi/certificates
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GAUDI_ROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/GAUDI/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CXX=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/g++
+OSG_HOSTNAME=gate01.aglt2.org
+DBRELEASE_OVERRIDE=current
+ATLAS_LOCAL_DAVIX_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+APFFID=BNL-gridui16-jhover
+HOME=/atlas/osghome/usatlas1
+SHLVL=3
+TopMass_13TeV_FrMu_DIR=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GFORTRAN_UNBUFFERED_ALL=y
+_CONDOR_MACHINE_AD=/tmp/condor/execute/dir_3997942/.machine.ad
+OSG_STORAGE_ELEMENT=True
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ALRB_cvmfs_sft_repo=/cvmfs/sft.cern.ch/lcg
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+AnalysisBaseExternals_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasBuildBranch=21.2
+ALRB_ACM_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/acm/0.1.17/acm
+X509_USER_PROXY=/tmp/condor/execute/dir_3997942/jhovercernprodProxy
+PilotHomeDir=/tmp/condor/execute/dir_3997942
+rcSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ATLAS_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+FC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gfortran
+DYLD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib
+ROOTCOREDIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+INDS=mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e5458_s3126_r9364_r9315_p3404
+RUCIO_ACCOUNT=pilot
+OSG_DEFAULT_SE=head01.aglt2.org
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+TMP=/tmp/condor/execute/dir_3997942
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/lib:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.7
+LCG_GFAL_INFOSYS=is.grid.iu.edu:2170
+AtlasBuildStamp=2019-02-01T0350
+ATLAS_LOCAL_CMAKE_VERSION=3.11.0
+TopMass_13TeV_FrMu_SET_UP=1
+OSG_SITE_NAME=AGLT2_PROD
+ATLAS_CONDDB=
+TestArea=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir
+AnalysisTop_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ATLAS_RELEASEDATA=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/atlas/offline/ReleaseData
+COMPILER_PATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6
+ROOTCORE_NCPUS=1
+PANDA_RESOURCE=ANALY_AGLT2_SL7-condor
+ALRB_DAVIX_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+OMP_NUM_THREADS=1
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+AnalysisBaseExternals_RELONLY_SET_UP=1
+LCG_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases
+PANDA_SITE_NAME=ANALY_AGLT2_SL7-condor
+ATHENA_PROC_NUMBER_JOB=1
+_CONDOR_JOB_AD=/tmp/condor/execute/dir_3997942/.job.ad
+RUCIO_APPID=panda-client-0.6.15-jedi-run
+_CONDOR_ANCESTOR_1965627=1965663:1551049315:804187927
+XRDSYS=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+CMAKE_PREFIX_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ASG_TEST_FILE_MC=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ASG_TEST_FILE_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/data16_13TeV.00311321.physics_Main.DAOD_PHYSVAL.r9264_AthDerivation-21.2.1.0.root
+CC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gcc
+BINARY_TAG=x86_64-slc6-gcc62-opt
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+CVMFSBASE=/cvmfs
+AtlasBaseDir=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+PanDA_TaskID=17303704
+FRONTIER_SERVER=(serverurl=http://frontier-atlas.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas1.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas2.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas3.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier05.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)(proxyurl=http://atlasbpfrontier.fnal.gov:3127)(proxyurl=http://atlasbpfrontier.cern.ch:3127)
+ROOTCOREBIN=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CMSSW_VERSION=[17303704_4265075871]
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+SITE_NAME=AGLT2
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2
+_CONDOR_JOB_IWD=/tmp/condor/execute/dir_3997942
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+VO_ATLAS_AGIS_SITE=AGLT2
+ATLAS_LOCAL_RUCIOCLIENTS_VERSION=1.18.5
+ALRB_availableToolsPre= lsetup
+_=/bin/env
+
+=== ls ./ ===
+total 180
+-rwxr-xr-x 1 usatlas1 usatlas  2812 Mar  4 07:50 01SubmitToGrid.py
+-rwxr-xr-x 1 usatlas1 usatlas   313 Mar  4 07:50 02DownloadFromGrid.py
+-rwxr-xr-x 1 usatlas1 usatlas  1582 Mar  4 07:50 03LocalAnalysis.py
+-rwxr-xr-x 1 usatlas1 usatlas  3860 Mar  4 07:50 04Plot.py
+-rwxr-xr-x 1 usatlas1 usatlas   615 Mar  4 07:50 10AmiYield.py
+-rwxr-xr-x 1 usatlas1 usatlas   895 Mar  4 07:50 11CrossSection.py
+-rw-r--r-- 1 usatlas1 usatlas  1518 Mar  4 07:50 CMakeLists.txt
+-rwxr-xr-x 1 usatlas1 usatlas 26609 Mar  4 07:50 Data_rel21.py
+-rw-r--r-- 1 usatlas1 usatlas 23939 Mar  4 07:50 Data_rel21.pyc
+-rwxr-xr-x 1 usatlas1 usatlas  1441 Mar  4 07:50 DerivationTags.py
+-rw-r--r-- 1 usatlas1 usatlas  1410 Mar  4 07:50 DerivationTags.pyc
+-rwxr-xr-x 1 usatlas1 usatlas 22557 Mar  4 07:50 MC16_TOPQ1.py
+-rw-r--r-- 1 usatlas1 usatlas 20784 Mar  4 07:50 MC16_TOPQ1.pyc
+-rw-r--r-- 1 usatlas1 usatlas   569 Mar  4 07:50 ROOT.py
+-rw-r--r-- 1 usatlas1 usatlas 10843 Mar  4 07:50 UpfoldingRecoLevel.txt
+drwxr-xr-x 4 usatlas1 usatlas  4096 Mar  4 07:50 fa43e897-6749-4afc-a07c-11dc81c87943
+-rw-r--r-- 1 usatlas1 usatlas   296 Mar  4 07:50 outfilename.h
+-rw-r--r-- 1 usatlas1 usatlas    77 Mar  4 07:50 setup.sh
+drwxr-xr-x 3 usatlas1 usatlas  4096 Mar  4 07:50 usr
+-rw-r--r-- 1 usatlas1 usatlas  8984 Mar  4 07:50 wrapper.o
+
+=== write input to file ===
+IN to in.txt : root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1,root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a9/e1/DAOD_TOPQ1.12770053._000006.pool.root.1,root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/cd/a1/DAOD_TOPQ1.12770053._000007.pool.root.1,root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/69/8b/DAOD_TOPQ1.12770053._000008.pool.root.1
+
+=== execute ===
+source usr/*/*/InstallArea/*/setup.sh;env;export TestArea=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir; export PANDA_PRELOAD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/fa43e897-6749-4afc-a07c-11dc81c87943/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; export LD_PRELOAD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/fa43e897-6749-4afc-a07c-11dc81c87943/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; cat trf.5b8a87f9-b9fc-4a7c-a85f-f39e6c638f6d.py;python -u trf.5b8a87f9-b9fc-4a7c-a85f-f39e6c638f6d.py
+ATLAS_LOCAL_ACM_VERSION=0.1.17
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+ATLAS_PYTHON_PILOT=/bin/python
+MANPATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/share/man:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/share/man:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/man:/usr/local/share/man:/usr/share/man
+_CONDOR_JOB_PIDS=
+ASG_TEST_FILE_MC_AFII=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/valid1.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.DAOD_PHYSVAL.e4993_s3189_r9524_AthDerivation-21.2.1.0.root
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1
+ATLAS_LOCAL_ROOT_PACOPT=
+ROOT_INCLUDE_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/libxml2:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/include/eigen3
+ATLAS_LOCAL_XROOTD_VERSION=4.9.0-x86_64-centos7
+AnalysisBaseExternals_VERSION=21.2.61
+MAKEFLAGS=-j1 QUICK=1 -l1
+ALRB_testPath=,,,,
+LHAPATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+TMPDIR=/tmp/condor/execute/dir_3997942
+GLOBUS_LOCATION=/usr
+ALRB_SHELL=/bin/sh
+LHAPDF_DATA_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current
+_CONDOR_SCRATCH_DIR=/tmp/condor/execute/dir_3997942
+ALRB_clientShell=/bin/sh
+AtlasProject=AnalysisTop
+AtlasReleaseType=stable
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+SITEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+X509_CERT_DIR=/etc/grid-security/certificates
+OSG_WN_TMP=/tmp
+ALRB_useGridSW=emi
+AtlasSetupStatus=0
+AtlasArea=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61
+LC_ALL=C
+ROOT_TTREECACHE_SIZE=1
+VIEWSDIR=/cvmfs/sft.cern.ch/lcg/views
+ATLAS_LOCAL_DAVIX_VERSION=0.7.2-x86_64-slc7
+CALIBPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/sw/DbData/GroupData:/cvmfs/atlas.cern.ch/repo/sw/database/GroupData:/eos/atlas/atlascerngroupdisk/asg-calib:/afs/cern.ch/atlas/www/GROUPS/DATABASE/GroupData:http//cern.ch/atlas-groupdata:http//atlas.web.cern.ch/Atlas/GROUPS/DATABASE/GroupData
+TDAQ_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+COPY_TOOL=OLDMOVERDEPRECATED
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+OSG_SQUID_LOCATION=squid.aglt2.org:3128
+JOBOPTSEARCHPATH=.:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/jobOptions
+USER=usatlas1
+_CHIRP_DELAYED_UPDATE_PREFIX=Chirp
+OSG_SITE_WRITE=/pnfs/aglt2.org/atlasscratchdisk
+CMTCONFIG=x86_64-slc6-gcc62-opt
+LD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib64:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/lib64:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib:/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib
+TEMP=/tmp/condor/execute/dir_3997942
+ROOTCORE_TEST_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL
+ALRB_noGridMW=YES
+ALRB_RHVER=7
+ASETUP_PPID=3997956
+BATCH_SYSTEM=HTCondor
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+ALRB_SCRATCH=/atlas/osghome/usatlas1/.alrb
+ATLAS_FRONTIER_CONF=(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier02.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli02.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)
+ALRB_printHelpMain=
+AnalysisTop_VERSION=21.2.61
+CMAKE_NO_VERBOSE=1
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+GFORTRAN_TMPDIR=/tmp/condor/execute/dir_3997942
+_CONDOR_CHIRP_CONFIG=/tmp/condor/execute/dir_3997942/.chirp.config
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+DQ2_LOCAL_SITE_ID=AGLT2_SCRATCHDISK
+ATLAS_LOCAL_AREA=/atlas/data08/OSG/APPSL6/atlas_app/local
+OSG_SITE_READ=/pnfs/aglt2.org/atlasscratchdisk
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26/AtlasSetup
+CONDORCE_COLLECTOR_HOST=gate01.aglt2.org:9619
+FRONTIER_ID=[17303704_4265075871]
+ATLAS_LOCAL_RCSETUP_VERSION=00-04-18
+AnalysisTop_SET_UP=1
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V01-00-26
+FRONTIER_LOG_LEVEL=warning
+FACTORYUSER=autopyfactory
+TopMass_13TeV_FrMu_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasSetupVersion=AtlasSetup-01-00-26
+ALRB_RELOCATECVMFS=NO
+ALRB_availableTools= acm adctools agis art asetup atlantis boost cmake cppcheck davix eiclient emi fax fftw ganga gcc gccxml git gitlab gsl hdf5 lcgenv pacman panda png pod pyami python rcsetup root rucio sft swmgr tbb views xcache xrootd
+ROOTCORE_RELEASE_SERIES=25
+APFCID=2033872.12
+PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/bin:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Cmake/3.11.0/Linux-x86_64/bin:/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin:/cvmfs/sft.cern.ch/lcg/releases/binutils/2.28-a983d/x86_64-slc6/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/usr/local/bin:/bin:/usr/bin
+PANDA_JSID=BNL-gridui16-jhover
+ATLAS_DB_AREA=/cvmfs/atlas.cern.ch/repo/sw/database
+_CONDOR_ANCESTOR_3997942=3997956:1551703741:261552357
+AtlasSetupSiteCMake=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.configCMake/.asetup.site
+ALRB_OSMAJORVER=7
+AnalysisTop_PLATFORM=x86_64-slc6-gcc62-opt
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+OSG_DATA=/atlas/data08/OSG/DATA
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5
+ALRB_OSTYPE=Linux
+PWD=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir
+OSG_APP=/atlas/data08/OSG/APPSL6
+GTAG=http://gridui16.usatlas.bnl.gov:25880/2019-03-04/ANALY_AGLT2_SL7-condor-gate01.aglt2.org/2033872.12.out
+RUCIO_AUTH_TYPE=x509_proxy
+AtlasVersion=21.2.61
+FACTORYQUEUE=ANALY_AGLT2_SL7-condor-gate01.aglt2.org
+LANG=C
+VOMS_PROXY_INFO_DONT_VERIFY_AC=true
+_CONDOR_WRAPPER_ERROR_FILE=/tmp/condor/execute/dir_3997942/.job_wrapper_failure
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+DATAPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/data:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/share:/eos/atlas/atlascerngroupdisk/data-art/grid-input
+ROOTCORE_TEST_FILE=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ALRB_tmpScratch=/tmp/condor/execute/dir_3997942/usatlas1/.alrb
+ALRB_requestedVersions=cmake:3.11.0  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  davix:0.7.2-x86_64-slc7 xrootd:4.9.0-x86_64-centos7 rucio:1.18.5 emi:4.0.3-1v3  rcsetup:00-04-18  acm:0.1.17 asetup:V01-00-26  
+ALRB_allowSL6onSL5=NO
+ATLAS_LOCAL_ASETUP_VERSION=V01-00-26
+XMLPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/XML
+TopMass_13TeV_FrMu_VERSION=21.2.61
+PYTHONHOME=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+AnalysisBaseExternals_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+PandaID=4265075871
+_CONDOR_SLOT=slot3
+AnalysisBaseExternals_EXTONLY_SET_UP=1
+ATLAS_POOLCOND_PATH=/cvmfs/atlas-condb.cern.ch/repo/conditions
+DQ2_ENDUSER_SETUP=True
+OSG_GRID=/etc/osg/wn-client/
+_CONDOR_ANCESTOR_1965663=3997942:1551703741:3237580866
+ALRB_gridType=none
+ALRB_availableToolsPost= advanced diagnostics helpme printmenu showversions
+SSL_CERT_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/etc/grid-security-emi/certificates
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GAUDI_ROOT=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/GAUDI/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CXX=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/g++
+OSG_HOSTNAME=gate01.aglt2.org
+DBRELEASE_OVERRIDE=current
+ATLAS_LOCAL_DAVIX_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+APFFID=BNL-gridui16-jhover
+HOME=/atlas/osghome/usatlas1
+SHLVL=3
+TopMass_13TeV_FrMu_DIR=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+GFORTRAN_UNBUFFERED_ALL=y
+_CONDOR_MACHINE_AD=/tmp/condor/execute/dir_3997942/.machine.ad
+OSG_STORAGE_ELEMENT=True
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ALRB_cvmfs_sft_repo=/cvmfs/sft.cern.ch/lcg
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+AnalysisBaseExternals_PLATFORM=x86_64-slc6-gcc62-opt
+AtlasBuildBranch=21.2
+ALRB_ACM_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/acm/0.1.17/acm
+X509_USER_PROXY=/tmp/condor/execute/dir_3997942/jhovercernprodProxy
+PilotHomeDir=/tmp/condor/execute/dir_3997942
+rcSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-18
+ATLAS_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+FC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gfortran
+DYLD_LIBRARY_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0/lib
+ROOTCOREDIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+INDS=mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e5458_s3126_r9364_r9315_p3404
+RUCIO_ACCOUNT=pilot
+OSG_DEFAULT_SE=head01.aglt2.org
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+TMP=/tmp/condor/execute/dir_3997942
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/../../../../AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt/python:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rucio-clients/1.18.5/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/externals/kerberos/lib.slc6-x86_64-2.7:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/lib:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.7
+LCG_GFAL_INFOSYS=is.grid.iu.edu:2170
+AtlasBuildStamp=2019-02-01T0350
+ATLAS_LOCAL_CMAKE_VERSION=3.11.0
+TopMass_13TeV_FrMu_SET_UP=1
+OSG_SITE_NAME=AGLT2_PROD
+ATLAS_CONDDB=
+AnalysisTop_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ATLAS_RELEASEDATA=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/atlas/offline/ReleaseData
+COMPILER_PATH=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6
+ROOTCORE_NCPUS=1
+PANDA_RESOURCE=ANALY_AGLT2_SL7-condor
+ALRB_DAVIX_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.7.2-x86_64-slc7
+OMP_NUM_THREADS=1
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+AnalysisBaseExternals_RELONLY_SET_UP=1
+LCG_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases
+PANDA_SITE_NAME=ANALY_AGLT2_SL7-condor
+ATHENA_PROC_NUMBER_JOB=1
+_CONDOR_JOB_AD=/tmp/condor/execute/dir_3997942/.job.ad
+RUCIO_APPID=panda-client-0.6.15-jedi-run
+_CONDOR_ANCESTOR_1965627=1965663:1551049315:804187927
+XRDSYS=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.9.0-x86_64-centos7/v4.9.0
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+CMAKE_PREFIX_PATH=/tmp/Panda_Pilot_3998216_1551703763/PandaJob/workDir/usr/TopMass_13TeV_FrMu/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisBaseExternals/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+ASG_TEST_FILE_MC=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.DAOD_PHYSVAL.e5458_s3126_r9364_r9315_AthDerivation-21.2.1.0.root
+ASG_TEST_FILE_DATA=/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/CommonInputs/DAOD_PHYSVAL/data16_13TeV.00311321.physics_Main.DAOD_PHYSVAL.r9264_AthDerivation-21.2.1.0.root
+CC=/cvmfs/sft.cern.ch/lcg/releases/gcc/6.2.0-b9934/x86_64-slc6/bin/gcc
+BINARY_TAG=x86_64-slc6-gcc62-opt
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+CVMFSBASE=/cvmfs
+AtlasBaseDir=/cvmfs/atlas.cern.ch/repo/sw/software/21.2
+PanDA_TaskID=17303704
+FRONTIER_SERVER=(serverurl=http://frontier-atlas.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas1.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas2.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas3.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier05.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(proxyurl=http://squid.aglt2.org:3128)(proxyurl=http://cache2.aglt2.org:3128)(proxyurl=http://cache.aglt2.org:3128)(proxyurl=http://cache3.aglt2.org:3128)(proxyurl=http://atlasbpfrontier.fnal.gov:3127)(proxyurl=http://atlasbpfrontier.cern.ch:3127)
+ROOTCOREBIN=/cvmfs/atlas.cern.ch/repo/sw/software/21.2/AnalysisTop/21.2.61/InstallArea/x86_64-slc6-gcc62-opt
+CMSSW_VERSION=[17303704_4265075871]
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+SITE_NAME=AGLT2
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2
+_CONDOR_JOB_IWD=/tmp/condor/execute/dir_3997942
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+VO_ATLAS_AGIS_SITE=AGLT2
+ATLAS_LOCAL_RUCIOCLIENTS_VERSION=1.18.5
+ALRB_availableToolsPre= lsetup
+_=/bin/env
+import os,sys
+status=os.system(r""" top-xaod UpfoldingRecoLevel.txt in.txt""")
+status %= 255
+sys.exit(status)
+
+xAOD::Init                INFO    Environment initialised for data access
+Configuration Files:
+    UpfoldingRecoLevel.txt
+    in.txt
+
+Configuration:
+"ApplyElectronInJetSubtraction"          : "False"                             - Subtract electrons close to jets for boosted analysis : True or False(top default)
+"ApplyTauMVATES"                         : "True"                              - Apply new Tau energy calibration based on substructure information and regression. Must be True. Deprecated.
+"ApplyTightSFsInLooseTree"               : "False"                             - Special: in Loose trees, calculate lepton SFs with tight leptons only, and considering they are tight: True or False (default)
+"BTagVariableSaveList"                   : "MV2c20_discriminant"               - The list of b-tag variables to save (EventSaverxAODNext only).
+"BTaggingCalibrationB"                   : "default"                           - The calibration to use for the b-tagging SFs (B-jets). Default 'default'
+"BTaggingCalibrationC"                   : "default"                           - The calibration to use for the b-tagging SFs (C- and T-jets). Default 'default'
+"BTaggingCalibrationLight"               : "default"                           - The calibration to use for the b-tagging SFs (Light-jets). Default 'default'
+"BTaggingSystExcludedFromEV"             : "none"                              - User-defined list of b-tagging systematics to be dextracted from eigenvector decomposition, separated by semi-colons (none by default)
+"BTaggingWP"                             : "FixedCutBEff_70"                   - b-tagging WPs to use in the analysis, separated by commas. The format should follow the convention of the b-tagging CP group, e.g. FixedCutBEff_60, FlatBEff_77, Continuous, etc. For fixed-cut WPs, the simpler format 60%, instead of FixedCutBEff_60, is also tolerated. The specified WPs which are calibrated for all flavours will have scale-factors computed. By default, no WP is used.
+"DoLoose"                                : "Data"                              - Run Loose selection and dumps the Loose trees : Data (default), MC, Both, False
+"DoParticleLevelOverlapRemoval"          : "True"                              - Perform overlap removal at particle level? True (default), False, or any combination (comma separated) of MuonJet, ElectronJet, JetPhoton
+"DoTight"                                : "Both"                              - Dumps the normal non-"*_Loose" trees : Data, MC, Both (default), False
+"DumpBtagSystsInSystTrees"               : "False"                             - Dump systematics-shifted b-tagging SFs in systematic TTrees, True or False (default: False)
+"DynamicKeys"                            : ""                                  - Additional dynamic key list seperated by ,
+"EgammaSystematicModel"                  : "1NP_v1"                            - Egamma Systematic model : FULL_v1 , 1NP_v1 (default)
+"ElectronCollectionName"                 : "Electrons"                         - Name of the Electron container
+"ElectronID"                             : "TightLH"                           - Type of electron. Likelihood LooseAndBLayerLH, MediumLH, TightLH
+"ElectronIDLoose"                        : "MediumLH"                          - Type of electron for background. Likelihood LooseAndBLayerLH, MediumLH, TightLH
+"ElectronIsolation"                      : "Gradient"                          - Isolation to use : Gradient, FCLoose, FCTight, FCHighPtCaloOnly, None
+"ElectronIsolationLoose"                 : "None"                              - Isolation to use : Gradient, FCLoose, FCTight, FCHighPtCaloOnly, None
+"ElectronIsolationSF"                    : " "                                 - Force electron isolation SF (e.g. None). EXPERIMENTAL!
+"ElectronIsolationSFLoose"               : " "                                 - Force electron isolation SF (e.g. None). EXPERIMENTAL!
+"ElectronPt"                             : "20000"                             - Electron pT cut for object selection (in MeV). Default 25 GeV.
+"ElectronTriggers"                       : "None"                              - Trigger list for GlobalLeptonTriggerSF - Format as 2015@trig1,trig2 2016@trig3,trig4 : Separate periods defined with @ using whitespace, triggers with comma (default: None)
+"ElectronTriggersLoose"                  : "None"                              - Trigger list for GlobalLeptonTriggerSF - Format as 2015@trig1,trig2 2016@trig3,trig4 : Separate periods defined with @ using whitespace, triggers with comma (default: None)
+"ElectronVariableSaveList"               : "pt.eta.phi.m.charge.ptvarcone20.topoetcone20.passPreORSelection" - The list of electron variables to save (EventSaverxAODNext only).
+"ElectronVetoLArCrack"                   : "True"                              - True/False. Set to False to disable LAr crack veto (not recommended).
+"EventVariableSaveList"                  : "runNumber.eventNumber.eventTypeBitmask.averageInteractionsPerCrossing" - The list of event variables to save (EventSaverxAODNext only).
+"FakesMMDebug"                           : "False"                             - Enables debug mode for matrix-method weight calculation: True, False (default)
+"FakesMMDir"                             : "$ROOTCOREBIN/data/TopFakes"        - Directory of files containing efficiencies for fake prompt leptons estimate - default is $ROOTCOREBIN/data/TopFakes
+"FakesMMWeights"                         : "False"                             - Calculate matrix-method weights for fake prompt leptons estimate : True (calculate weights), False (does nothing)
+"FirstEvent"                             : "0"                                 - The number of events that you want to skip (for testing). If 0 then no events are skipped.
+"FwdJetAndMET"                           : "Default"                           - Forward jet selection and corresponding MET calculation.Default (does nothing on forward jets), fJVT (apply fJVT cut if pT<50GeV and |eta|>2.5), Tight (requires pT>30GeV if |eta|>2.5).
+"GRLDir"                                 : "GoodRunsLists"                     - Location of GRL File
+"GRLFile"                                : "data15_13TeV/20170619/physics_25ns_21.0.19.xml data16_13TeV/20170605/physics_25ns_21.0.19.xml data17_13TeV/20171130/physics_25ns_Triggerno17e33prim.xml" - Name of GRL File
+"HLLHC"                                  : "False"                             - Set to run HL-LHC studies,True or False (default False)
+"HLLHCFakes"                             : "False"                             - Set to enable Fakes HL-LHC studies,True or False (default False)
+"IsAFII"                                 : " "                                 - Define if you are running over a fastsim sample: True or False
+"JSF"                                    : "1.0"                               - Used for top mass analysis, default is 1.0
+"JVTinMETCalculation"                    : "True"                              - Perfom a JVT cut on the jets in the MET recalculation? True (default) or False.
+"JetCalibSequence"                       : "GSC"                               - Jet calibaration sequence, GSC (default) or JMS
+"JetCollectionName"                      : "AntiKt4EMTopoJets"                 - Name of the Jet container
+"JetEta"                                 : "2.5"                               - Absolute Jet eta cut for object selection. Default 2.5.
+"JetGhostTrackDecoName"                  : "None"                              - Name of the jet decoration that holds the ghost-associated track.
+"JetJERSmearingModel"                    : "Simple"                            - All (inc. data smearing), All_PseudoData (use MC as pseudo-data), Full (inc. data smearing), Full_PseudoData (use MC as pseudo-data) or Simple (MC only - default)
+"JetPt"                                  : "25000"                             - Jet pT cut for object selection (in MeV). Default 25 GeV.
+"JetPtGhostTracks"                       : "17000."                            - Jet pT threshold for ghost track systematic variations calculation (in MeV). Default 17 GeV.
+"JetUncertainties_BunchSpacing"          : "25ns"                              - 25ns (default) or 50ns - for JetUncertainties
+"JetUncertainties_NPModel"               : "CategoryReduction"                 - AllNuisanceParameters, CategoryReduction (default), GlobalReduction, StrongReduction - for JetUncertainties
+"JetUncertainties_QGFracFile"            : "None"                              - To specify a root file with quark/gluon fractions, in order to reduce FlavourComposition and response uncertainties. Default: None (i.e. no file is used and default flat 50+/-50% fraction is used).
+"JetUncertainties_QGHistPatterns"        : "None"                              - To specify a pattern for the name of the quark/gluon fractions histograms, or a list of DSIDs which will have their specific histogram. Two syntaxes are possible, either a single string or a list of DSIDs separated by commas:   "MyQGHisto" (the histograms with "MyQGHisto" in their names will be used for all DSIDs),   "410470,410472,345873,345874,345875" (for the listed DSIDs, histograms with the processed DSID will be used, while the flat 50+/-50% fraction will be used for the other DSIDs). Default: None (i.e. no specific pattern is looked for in the name of the provided histograms).
+"JetVariableSaveList"                    : "pt.eta.phi.m.passPreORSelection.btaggingLink.HadronConeExclTruthLabelID" - The list of jet variables to save (EventSaverxAODNext only).
+"KLFitterBTaggingMethod"                 : "kVetoNoFitBoth"                    - Recommend use kNotag or kVetoNoFit - see KLFitter TWiki
+"KLFitterFailOnLessThanXJets"            : "False"                             - Fail if kLeadingX or kBtagPriorityXJets is set and the number of jets in the event is less than X (Default is False)
+"KLFitterJetSelectionMode"               : "kBtagPrioritySixJets"              - kLeadingThree , kLeadingFour , kLeadingFive , kLeadingSix , kLeadingSeven , kBtagPriorityThreeJets , kBtagPriorityFourJets , kBtagPriorityFiveJets, kBtagPrioritySixJets , kBtagPrioritySevenJets
+"KLFitterLH"                             : "ttbar"                             - Select likelihood depending on signal, ttbar, ttbar_angles, ttH, ttZTrilepton, ttbar_AllHadronic, ttbar_BoostedLJets
+"KLFitterOutput"                         : "FULL"                              - Select the KLFitter output (FULL, FITTEDTOPS_ONLY, JETPERM_ONLY)
+"KLFitterSaveAllPermutations"            : "False"                             - Save All permutations to the output file (False will save only the best)
+"KLFitterTopMassFixed"                   : "False"                             - Fix the mass of the top quark? True or False
+"KLFitterTransferFunctionsPath"          : "mc15c/akt4_EMtopo_PP6/"            - Select the transfer functions to use
+"KillExperimental"                       : " "                                 - Disable some specific experimental feature.
+"LHAPDFBaseSet"                          : " "                                 - Base PDF set used to recalculate XF1,XF2 values if they are zero. Will be added to LHAPDFSets.
+"LHAPDFEventWeights"                     : "False"                             - Save per event weights for all PDF sets/members: True (lots of info in truth tree!), Nominal (save to the nominal tree if passes selection) or False (nothing, default).
+"LHAPDFSets"                             : " "                                 - List of PDF sets to calculate weights for, seperated by spaces, use LHAPDF names e.g CT10nlo NNPDF30_nlo_as_0118 MMHT2014nlo68cl
+"LargeJetCollectionName"                 : "None"                              - Name of the large-R Jet container
+"LargeJetOverlapRemoval"                 : "False"                             - Perform overlap removal including large-R jets. True or False (default: False).
+"LargeJetSubstructure"                   : "None"                              - Setup to use when applying grooming on the large-R jet
+"LargeRJESJMSConfig"                     : "CombMass"                          - Calibration for large-R JES/JMS. CombMass or CaloMass (default CombMass).
+"LargeRJESUncertaintyConfig"             : "Split23,Tau32WTA"                  - Variables to be varied with JES uncertainties. Options:D2Beta1,Tau21WTA,Tau32WTA,Split12,Split23,Qw ( default Split23,Tau32WTA)
+"LargeRJetEta"                           : "2"                                 - Absolute large-R jet eta cut for object selection. Default 2.0.
+"LargeRJetPt"                            : "200000"                            - Track Jet pT cut for object selection (in MeV). Default 7 GeV.
+"LargeRSmallRCorrelations"               : "False"                             - Do large-small R jet correlation systematics - True or False (default)
+"LargeRToptaggingConfigFile"             : "NFC"                               - Configuration file for top tagging (default or NFC). default=d23,tau32 (recommended) NFC=m,tau32(alternative not optimized on large-R jet containing a truth top)
+"LibraryNames"                           : "libTopEventSelectionTools libTopEventReconstructionTools libTopMass_13TeV_Online" - Names of any libraries that need loading
+"MCGeneratorWeights"                     : "Nominal"                           - Do you want the OTF-computed MC generator weights (if available)? True (in truth tree), Nominal (save to the nominal tree if passes selection) or False (nothing, default)
+"MuonCollectionName"                     : "Muons"                             - Name of the Muon container
+"MuonEta"                                : "2.5"                               - Absolute Muon eta cut for object selection. Default 2.5.
+"MuonIsolation"                          : "Gradient"                          - Isolation to use : Gradient, GradientLoose, Tight, Loose, LooseTrackOnly, FixedCutTight, FixedCutTightTrackOnly, FixedCutLoose, FCTight, FCLoose, FCTightTrackOnly, PromptLepton, None
+"MuonIsolationLoose"                     : "Loose"                             - Isolation to use : Gradient, GradientLoose, Tight, Loose, LooseTrackOnly, FixedCutTight, FixedCutTightTrackOnly, FixedCutLoose, FCTight, FCLoose, FCTightTrackOnly, PromptLepton, None
+"MuonIsolationSF"                        : " "                                 - Force muon isolation SF (e.g. None). EXPERIMENTAL!
+"MuonIsolationSFLoose"                   : " "                                 - Force muon isolation SF (e.g. None). EXPERIMENTAL!
+"MuonPt"                                 : "20000"                             - Muon pT cut for object selection (in MeV). Default 25 GeV.
+"MuonQuality"                            : "Medium"                            - Muon quality cut for object selection. Options are VeryLoose, Loose, Medium (default) and Tight
+"MuonQualityLoose"                       : "Loose"                             - Muon quality cut for object selection. Options are VeryLoose, Loose, Medium (default) and Tight
+"MuonTriggerSF"                          : "HLT_mu20_iloose_L1MU15_OR_HLT_mu50" - Muon trigger SFs to calculate
+"MuonTriggers"                           : "None"                              - Trigger list for GlobalLeptonTriggerSF - Format as 2015@trig1,trig2 2016@trig3,trig4 : Separate periods defined with @ using whitespace, triggers with comma (default: None)
+"MuonTriggersLoose"                      : "None"                              - Trigger list for GlobalLeptonTriggerSF - Format as 2015@trig1,trig2 2016@trig3,trig4 : Separate periods defined with @ using whitespace, triggers with comma (default: None)
+"MuonVariableSaveList"                   : "pt.eta.phi.m.author.charge.ptvarcone30.topoetcone20.muonType.passPreORSelection" - The list of muon variables to save (EventSaverxAODNext only).
+"NEvents"                                : "0"                                 - The number of events that you want to run on (for testing). If 0 then all events are run.
+"NumberOfBootstrapReplicas"              : "100"                               - Define integer number of replicas to be stored with bootstrapping, Default 100
+"ObjectSelectionName"                    : "top::ObjectLoaderStandardCuts"     - Code used to define objects, e.g. ObjectLoaderStandardCuts
+"OutputEvents"                           : "SelectedEvents"                    - AllEvents (saves all events + decison bits), SelectedEvents (saves only the events passing your cuts)
+"OutputFileBasketSizePrimitive"          : "4096"                              - Set the TTree basket size for primitive objects (int, float, ...). (default: 4096)
+"OutputFileBasketSizeVector"             : "40960"                             - Set the TTree basket size for vector objects. (default: 40960)
+"OutputFileNEventAutoFlush"              : "1000"                              - Set the number of events after which the TTree cache is optimised, ie setAutoFlush(nEvents). (default: 1000)
+"OutputFileSetAutoFlushZero"             : "False"                             - setAutoFlush(0) on EventSaverFlatNtuple for ANALYSISTO-44 workaround. (default: False)
+"OutputFilename"                         : "output.root"                       - The file that will contain the output histograms and trees
+"OutputFormat"                           : "top::MassEventSaver"               - Format, can be user defined, e.g. top::EventSaverFlatNtuple
+"OverlapRemovalLeptonDef"                : "Tight"                             - Special: run overlap removal on : Tight (top default) or Loose (not top default) lepton definitions
+"OverlapRemovalProcedure"                : "recommended"                       - Overlap removal procedure to be used. Options include: recommended [default], jetmuApplyRelPt, harmonized, Boosted, BoostedSlidingDREl, BoostedSlidingDRMu, BoostedSlidingDRElMu, noTauJetOLR
+"OverlapRemovalSlidingInnerDRel"         : "0.2"                               - Overlap removal inner radius to be used for electron SlidingDR ,
+"OverlapRemovalSlidingInnerDRmu"         : "0.2"                               - Overlap removal inner radius to be used for muon SlidingDR ,
+"PDFInfo"                                : "True"                              - Do you want the PDF info? True (in truth tree), Nominal (save to the nominal tree if passes selection) or False (nothing, default)
+"PRWActualMu_AF"                         : " "                                 - List of actual mu files only for fast sim samples, seperated by spaces (nothing by default)
+"PRWActualMu_FS"                         : " "                                 - List of actual mu files for full sim samples, seperated by spaces (nothing by default)
+"PRWConfigFiles"                         : " "                                 - List of PU config files, seperated by spaces (nothing by default) - Not compatible with FS/AF options
+"PRWConfigFiles_AF"                      : "dev/AnalysisTop/PileupReweighting/user.iconnell.Top.PRW.MC16a.AF.v2/prw.merged.root" - List of PU config files only for fast sim samples, seperated by spaces (nothing by default)
+"PRWConfigFiles_FS"                      : "dev/AnalysisTop/PileupReweighting/user.iconnell.Top.PRW.MC16a.FS.v2/prw.merged.root" - List of PU config files only for full sim samples, seperated by spaces (nothing by default)
+"PRWCustomScaleFactor"                   : "1.0/1.03:1.0/0.99:1.0/1.07"        - Specify custom scale-factor and up/down variations, for specific studies.Format is 'nominal:up:down'.If nothing is set, the default values will be used (recommended).
+"PRWLumiCalcFiles"                       : "GoodRunsLists/data15_13TeV/20170619/PHYS_StandardGRL_All_Good_25ns_276262-284484_OflLumi-13TeV-008.root GoodRunsLists/data16_13TeV/20180129/PHYS_StandardGRL_All_Good_25ns_297730-311481_OflLumi-13TeV-009.root" - List of PU lumicalc files, seperated by spaces (nothing by default)
+"PRWMuDependent"                         : "True"                              - Use mu dependent random run numbers for MC. True or False (default True)
+"PRWUnrepresentedDataTolerance"          : "0.05"                              - Specify value between 0 and 1 to represent acceptable fraction of unrepresented data in PRW [default: 0.05]
+"PRWUseGRLTool"                          : "False"                             - Pass the GRL tool to the PU reweighting tool (False by default)
+"PerfStats"                              : "No"                                -  I/O Performance printouts. None, Summary or Full
+"PhotonCollectionName"                   : "None"                              - Name of the Photon container
+"PhotonEta"                              : "2.5"                               - Absolute Photon eta cut for object selection. Default 2.5.
+"PhotonID"                               : "Tight"                             - Type of photon. Definition to use : Tight, Loose and None.
+"PhotonIDLoose"                          : "Loose"                             - Type of photon for background. Definition to use : Tight, Loose, None.
+"PhotonIsolation"                        : "FixedCutTight"                     - Isolation to use : FixedCutTight, FixedCutLoose, None.
+"PhotonIsolationLoose"                   : "FixedCutLoose"                     - Isolation to use : FixedCutTight, FixedCutLoose, None.
+"PhotonPt"                               : "25000."                            - Photon pT cut for object selection (in MeV). Default 25 GeV.
+"PhotonUseRadiativeZ"                    : "False"                             - True/False. Set to True to enable photon radiative Z up to 100 GeV.
+"PhotonVariableSaveList"                 : "pt.eta.phi.m.charge.ptvarcone20.topoetcone20.passPreORSelection" - The list of photon variables to save (EventSaverxAODNext only).
+"RCJetEta"                               : "2.0"                               - Reclustered Jet eta cut for object selection. Default 2.0.
+"RCJetPt"                                : "100000."                           - Reclustered Jet pT cut for object selection (in MeV). Default 100000 MeV.
+"RCJetRadius"                            : "1.0"                               - Reclustered Jet radius for object selection. Default 1.0
+"RCJetTrim"                              : "0.05"                              - Reclustered Jet trimming cut for object selection. Default 0.05.
+"SaveBootstrapWeights"                   : "False"                             - Set to true in order to save Poisson bootstrap weights,True or False (default False)
+"Systematics"                            : "Nominal"                           - What to run? Nominal (just the nominal), All(do all systematics) 
+"TDPPath"                                : "dev/AnalysisTop/TopDataPreparation/XSection-MC15-13TeV.data" - Path to TopDataPreparation file (accessible via PathResolver)
+"TauCollectionName"                      : "None"                              - Name of the Tau container
+"TauEleBDTWP"                            : "Loose"                             - Tau electron BDT WP (None, Loose, Medium, Tight).Default Loose.
+"TauEleBDTWPLoose"                       : "Loose"                             - Loose Tau electron BDT WP (None, Loose, Medium, Tight).Default Loose.
+"TauEleOLR"                              : "False"                             - Apply tau-electron overlap removal (True/False).Default False
+"TauEleOLRLoose"                         : "False"                             - Apply loose tau-electron overlap removal (True/False).Default False
+"TauJetConfigFile"                       : "Default"                           - Config file to configure tau selection. If anything other than 'Default'then all cuts are taken from the config file rather than other options.
+"TauJetConfigFileLoose"                  : "Default"                           - Config file to configure loose tau selection. If anything other than 'Default'then all cuts are taken from the config file rather than other options.
+"TauJetIDWP"                             : "Medium"                            - Tau jet IDWP (None, Loose, Medium, Tight, LooseNotMedium, LooseNotTight, MediumNotTight, NotLoose).Default Medium.
+"TauJetIDWPLoose"                        : "Medium"                            - Loose Tau jet IDWP (None, Loose, Medium, Tight, LooseNotMedium, LooseNotTight, MediumNotTight, NotLoose).Default None.
+"TauPt"                                  : "25000"                             - Pt cut applied to both tight and loose taus (in MeV).Default 25 GeV.
+"TauVariableSaveList"                    : "pt.eta.phi.m.charge.passPreORSelection" - The list of tau variables to save (EventSaverxAODNext only).
+"TopParticleLevel"                       : "True"                              - Perform particle level selection? True or False
+"TopPartonHistory"                       : "ttbar"                             - ttbar, tb, Wtb, ttz, ttgamma, False (default)
+"TrackJetCollectionName"                 : "None"                              - Name of the track Jet container
+"TrackJetEta"                            : "2.5"                               - Absolute Track Jet eta cut for object selection. Default 2.5.
+"TrackJetPt"                             : "10000."                            - Track Jet pT cut for object selection (in MeV). Default 10 GeV.
+"TruthBlockInfo"                         : "False"                             - Do you want to dump the full Truth block info? True or False
+"TruthCollectionName"                    : "TruthParticles"                    - Name of the Truth container
+"TruthElectronCollectionName"            : "TruthElectrons"                    - Name of the Truth Electron container
+"TruthElectronEta"                       : "2.5"                               - Absolute electron eta cut for [Particle Level / Truth] object selection. Default 2.5.
+"TruthElectronPt"                        : "25000"                             - Electron pT cut for [Particle Level / Truth] object selection (in MeV). Default 25 GeV.
+"TruthJetCollectionName"                 : "AntiKt4TruthWZJets"                - Name of the Truth Jet container
+"TruthJetEta"                            : "2.5"                               - Absolute Jet eta cut for [Particle Level / Truth] object selection. Default 2.5.
+"TruthJetPt"                             : "25000"                             - Jet pT cut for [Particle Level / Truth] object selection (in MeV). Default 25 GeV.
+"TruthLargeRJetCollectionName"           : "AntiKt10TruthTrimmedPtFrac5SmallR20Jets" - Name of the Truth Large R Jet container
+"TruthLargeRJetEta"                      : "2.5"                               - Absolute Large R Jet eta cut for [Particle Level / Truth] object selection. Default 2.5.
+"TruthLargeRJetPt"                       : "25000"                             - Large R Jet pT cut for [Particle Level / Truth] object selection (in MeV). Default 25 GeV.
+"TruthMETCollectionName"                 : "MET_Truth"                         - Name of the Truth MET container
+"TruthMuonCollectionName"                : "TruthMuons"                        - Name of the Truth Muon container
+"TruthMuonEta"                           : "2.5"                               - Absolute Muon eta cut for [Particle Level / Truth] object selection. Default 2.5.
+"TruthMuonPt"                            : "25000"                             - Muon pT cut for [Particle Level / Truth] object selection (in MeV). Default 25 GeV.
+"TruthPhotonCollectionName"              : "None"                              - Name of the Truth Photon container
+"TruthPhotonEta"                         : "2.5"                               - Absolute Photon eta cut for [Particle Level / Truth] object selection. Default 2.5.
+"TruthPhotonIsolation"                   : "ptcone30 0.1"                      - Configuration option for isolation applied to [Particle Level / Truth] photons. This can be False / None (isolation requirement disabled), True (use default isolation), or a configuration in the format `VAR CUT`, where VAR is one of the isolation variables and CUT is the cut applied as `VAR / pt < CUT`.
+"TruthPhotonOrigin"                      : "WBoson,ZBoson,SinglePhot,Higgs,HiggsMSSM,WZMSSM,PromptPhot,SUSY,UndrPhot,FSRPhot" - Potential origin of [Particle Level / Truth] photons. Comma separated list of particle origin values as given by MCTruthClassifier (string names).
+"TruthPhotonPt"                          : "25000"                             - Photon pT cut for [Particle Level / Truth] object selection (in MeV). Default 25 GeV.
+"UseAntiMuons"                           : "false"                             - Use AntiMuons for fake estimate. Default: false
+"UseAodMetaData"                         : "True"                              - Whether to read xAOD meta-data from input files (default: True)
+"UseElectronChargeIDSelection"           : "False"                             - True/False. Switch on/off electron charge ID selection (Default False).
+"UseEventLevelJetCleaningTool"           : "False"                             - Switch to turn on event-level jet cleaning tool (for testing), True or False (default False)
+"UseGlobalLeptonTriggerSF"               : "False"                             - Switch to activate event-level trigger scale factors allowing multiple OR of single-, di-, tri- lepton triggers, True or False (default False)
+"UseRCJetAdditionalSubstructure"         : "False"                             - Calculate Additional Reclustered Jet Substructure Variables. Default False
+"UseRCJetSubstructure"                   : "False"                             - Calculate Reclustered Jet Substructure Variables. Default False
+"UseRCJets"                              : "False"                             - Use Reclustered Jets. Default False.
+"UseVarRCJetAdditionalSubstructure"      : "False"                             - Calculate Additional Variable-R Reclustered Jet Substructure Variables. Default False
+"UseVarRCJetSubstructure"                : "False"                             - Calculate Variable-R Reclustered Jet Substructure Variables. Default False
+"UseVarRCJets"                           : "False"                             - Use Reclustered Jets (Variable-R Jets). Default False.
+"VarRCJetEta"                            : "2.0"                               - Reclustered Jet (variable-R) eta cut for object selection. Default 2.0.
+"VarRCJetMassScale"                      : "m_w,m_z,m_h,m_t"                   - Reclustered Jet (variable-R) list of mass scale values (m_w,m_z,m_h,m_t). By default use all.
+"VarRCJetMaxRadius"                      : "1.0"                               - Reclustered Jet (variable-R) max. radius cut for object selection. Default 1.0
+"VarRCJetPt"                             : "100000."                           - Reclustered Jet (variable-R) pT cut for object selection (in MeV). Default 100000 MeV.
+"VarRCJetRho"                            : "2"                                 - Reclustered Jet (variable-R) list of rho values (). Default 2.
+"VarRCJetTrim"                           : "0.05"                              - Reclustered Jet (variable-R) trimming cut for object selection. Default 0.05.
+"WriteTrackingData"                      : "True"                              - Whether to generate and store analysis-tracking data (default: True)
+"applyTTVACut"                           : "True"                              - Decide if to apply lepton z0/d0 cuts
+"bJSF"                                   : "1.0"                               - Used for top mass analysis, default is 1.0
+
+Attempting to load library: libTopEventSelectionTools.so
+Attempting to load library: libTopEventReconstructionTools.so
+Attempting to load library: libTopMass_13TeV_Online.so
+Input filenames:
+TNetXNGFile::Open         ERROR   [FATAL] Socket error: Connection reset by peer
+    1/4 File: root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1
+Did not manage to open root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/mc16_13TeV/a1/06/DAOD_TOPQ1.12770053._000005.pool.root.1
+Can't continue
+
+
+=== ls ./ ===
+total 220
+-rwxr-xr-x 1 usatlas1 usatlas  2812 Mar  4 07:50 01SubmitToGrid.py
+-rwxr-xr-x 1 usatlas1 usatlas   313 Mar  4 07:50 02DownloadFromGrid.py
+-rwxr-xr-x 1 usatlas1 usatlas  1582 Mar  4 07:50 03LocalAnalysis.py
+-rwxr-xr-x 1 usatlas1 usatlas  3860 Mar  4 07:50 04Plot.py
+-rwxr-xr-x 1 usatlas1 usatlas   615 Mar  4 07:50 10AmiYield.py
+-rwxr-xr-x 1 usatlas1 usatlas   895 Mar  4 07:50 11CrossSection.py
+-rw-r--r-- 1 usatlas1 usatlas  1518 Mar  4 07:50 CMakeLists.txt
+-rwxr-xr-x 1 usatlas1 usatlas 26609 Mar  4 07:50 Data_rel21.py
+-rw-r--r-- 1 usatlas1 usatlas 23939 Mar  4 07:50 Data_rel21.pyc
+-rwxr-xr-x 1 usatlas1 usatlas  1441 Mar  4 07:50 DerivationTags.py
+-rw-r--r-- 1 usatlas1 usatlas  1410 Mar  4 07:50 DerivationTags.pyc
+-rwxr-xr-x 1 usatlas1 usatlas 22557 Mar  4 07:50 MC16_TOPQ1.py
+-rw-r--r-- 1 usatlas1 usatlas 20784 Mar  4 07:50 MC16_TOPQ1.pyc
+-rw-r--r-- 1 usatlas1 usatlas   569 Mar  4 07:50 ROOT.py
+-rw-r--r-- 1 usatlas1 usatlas 10843 Mar  4 07:50 UpfoldingRecoLevel.txt
+drwxr-xr-x 4 usatlas1 usatlas  4096 Mar  4 07:50 fa43e897-6749-4afc-a07c-11dc81c87943
+-rw-r--r-- 1 usatlas1 usatlas   487 Mar  4 07:50 in.txt
+-rw-r--r-- 1 usatlas1 usatlas   296 Mar  4 07:50 outfilename.h
+-rw-r--r-- 1 usatlas1 usatlas    77 Mar  4 07:50 setup.sh
+-rw-r--r-- 1 usatlas1 usatlas     0 Mar  4 07:50 tmp.stderr.7ea88034-52fe-4180-91a6-f210f0b2fb1a
+-rw-r--r-- 1 usatlas1 usatlas 32460 Mar  4 07:58 tmp.stdout.5101b11c-6cad-434e-bbea-ce5df26e00cd
+-rw-r--r-- 1 usatlas1 usatlas   111 Mar  4 07:50 trf.5b8a87f9-b9fc-4a7c-a85f-f39e6c638f6d.py
+drwxr-xr-x 3 usatlas1 usatlas  4096 Mar  4 07:50 usr
+-rw-r--r-- 1 usatlas1 usatlas  8984 Mar  4 07:50 wrapper.o
+
+mv: cannot stat 'output.root': No such file or directory
+
+/tmp/Panda_Pilot_3998216_1551703763/PandaJob
+total 5976
+-rwxr-xr-x  1 usatlas1 usatlas 131324 Feb 11  2016 AMSTaiwanExperiment.py
+-rw-r--r--  1 usatlas1 usatlas  78363 Mar  4 07:49 AMSTaiwanExperiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  27600 May  2  2016 AMSTaiwanSiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas  19728 Mar  4 07:49 AMSTaiwanSiteInformation.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   1820 Apr 23  2015 ATLASEventService.py
+-rwxr-xr-x  1 usatlas1 usatlas 107625 Nov  8 06:32 ATLASExperiment.py
+-rw-r--r--  1 usatlas1 usatlas  62554 Mar  4 07:49 ATLASExperiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  44557 Oct 19  2017 ATLASSiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas  23457 Mar  4 07:49 ATLASSiteInformation.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   6142 Feb 11  2016 ArgoJob.py
+-rwxr-xr-x  1 usatlas1 usatlas  24262 Feb 11  2016 BNLdCacheSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  15106 Mar  4 07:49 BNLdCacheSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   4045 Feb 11  2016 BalsamJob.py
+-rwxr-xr-x  1 usatlas1 usatlas  24563 Jun  8  2017 CMSExperiment.py
+-rw-r--r--  1 usatlas1 usatlas  15339 Mar  4 07:49 CMSExperiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   8348 Apr 23  2015 CMSSiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas   7931 Mar  4 07:49 CMSSiteInformation.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  18597 Feb 11  2016 CastorSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  10970 Mar  4 07:49 CastorSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  11947 Feb 11  2016 ChirpSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   8394 Mar  4 07:49 ChirpSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  14648 Jul 28  2016 Cleaner.py
+-rwxr-xr-x  1 usatlas1 usatlas   4312 Apr 23  2015 Configuration.py
+-rw-r--r--  1 usatlas1 usatlas   5844 Mar  4 07:49 Configuration.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   3286 Apr 23  2015 CustomEncoder.py
+-rwxr-xr-x  1 usatlas1 usatlas  12301 Apr 23  2015 DBReleaseHandler.py
+-rw-r--r--  1 usatlas1 usatlas  10357 Mar  4 07:49 DBReleaseHandler.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  40662 May  2  2016 DeferredStageout.py
+-rwxr-xr-x  1 usatlas1 usatlas    647 Apr 23  2015 Diagnosis.py
+-rw-r--r--  1 usatlas1 usatlas    797 Mar  4 07:49 Diagnosis.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   8245 Feb 28  2018 ErrorDiagnosis.py
+-rw-r--r--  1 usatlas1 usatlas   6325 Mar  4 07:49 ErrorDiagnosis.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   4871 Dec  6  2017 EventRanges.py
+-rw-r--r--  1 usatlas1 usatlas   3734 Mar  4 07:49 EventRanges.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   7915 Sep 11  2017 EventRangesPandaProxy.py
+-rw-r--r--  1 usatlas1 usatlas   6593 Mar  4 07:49 EventRangesPandaProxy.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   5328 Jun  8  2017 EventService.py
+-rwxr-xr-x  1 usatlas1 usatlas   1824 Sep 28  2016 EventServiceFactory.py
+-rwxr-xr-x  1 usatlas1 usatlas  37135 Apr  5  2018 Experiment.py
+-rw-r--r--  1 usatlas1 usatlas  23281 Mar  4 07:49 Experiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   2674 Apr 23  2015 ExperimentFactory.py
+-rw-r--r--  1 usatlas1 usatlas   2123 Mar  4 07:49 ExperimentFactory.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  53659 May  2  2016 FAXSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  33717 Mar  4 07:49 FAXSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   4408 Aug 31  2015 FAXTools.py
+-rw-r--r--  1 usatlas1 usatlas   3262 Mar  4 07:49 FAXTools.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  40618 Jul  6  2018 FileHandling.py
+-rw-r--r--  1 usatlas1 usatlas  29160 Mar  4 07:49 FileHandling.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  10976 Mar  8  2017 FileState.py
+-rw-r--r--  1 usatlas1 usatlas  10088 Mar  4 07:49 FileState.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   2776 Feb 11  2016 FileStateClient.py
+-rw-r--r--  1 usatlas1 usatlas   2900 Mar  4 07:49 FileStateClient.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  41936 Dec 16  2016 GFAL2SiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  28446 Mar  4 07:49 GFAL2SiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  10758 Feb 11  2016 GSIftpSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   8289 Mar  4 07:49 GSIftpSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  16509 Jul 28  2016 GetJob.py
+drwxr-xr-x  6 usatlas1 usatlas   4096 Mar  4 07:49 HPC
+-rwxr-xr-x  1 usatlas1 usatlas  28949 Apr 23  2015 JEMstub.py
+-rwxr-xr-x  1 usatlas1 usatlas  62057 Feb  5 11:04 Job.py
+-rw-r--r--  1 usatlas1 usatlas  36096 Mar  4 07:49 Job.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   2043 Apr 23  2015 JobInfoXML.py
+-rwxr-xr-x  1 usatlas1 usatlas  67044 Dec  5 14:31 JobLog.py
+-rwxr-xr-x  1 usatlas1 usatlas  29326 Feb 11  2016 JobRecovery.py
+-rw-r--r--  1 usatlas1 usatlas  20158 Mar  4 07:49 JobRecovery.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  10806 Feb 11  2016 JobState.py
+-rw-r--r--  1 usatlas1 usatlas   7753 Mar  4 07:49 JobState.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  39295 Nov  3  2016 LocalSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  26239 Mar  4 07:49 LocalSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   3529 Sep 28  2016 Logger.py
+-rwxr-xr-x  1 usatlas1 usatlas   9270 Feb 11  2016 MessageInterface.py
+-rwxr-xr-x  1 usatlas1 usatlas 110269 Dec  5 14:31 Monitor.py
+-rwxr-xr-x  1 usatlas1 usatlas 229997 Dec  5 14:31 Mover.py
+-rw-r--r--  1 usatlas1 usatlas 125513 Mar  4 07:49 Mover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  11418 Jul 18  2017 Node.py
+-rw-r--r--  1 usatlas1 usatlas   9011 Mar  4 07:49 Node.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  13955 Apr  5  2018 NordugridATLASExperiment.py
+-rw-r--r--  1 usatlas1 usatlas   9737 Mar  4 07:49 NordugridATLASExperiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   1933 Jul  1  2015 NordugridATLASSiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas   2028 Mar  4 07:49 NordugridATLASSiteInformation.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   3914 Feb 11  2016 OtherExperiment.py
+-rw-r--r--  1 usatlas1 usatlas   4345 Mar  4 07:49 OtherExperiment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   1991 Apr 23  2015 OtherSiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas   2408 Mar  4 07:49 OtherSiteInformation.pyc
+-rw-r--r--  1 usatlas1 usatlas     12 Feb  5 11:04 PILOTVERSION
+-rw-r--r--  1 usatlas1 usatlas     31 Mar  4 07:49 PILOT_INITDIR
+-rwxr-xr-x  1 usatlas1 usatlas  49697 Feb  5 11:04 PandaServerClient.py
+-rwxr-xr-x  1 usatlas1 usatlas  17668 Nov  8 06:32 PilotErrors.py
+-rw-r--r--  1 usatlas1 usatlas  16691 Mar  4 07:49 PilotErrors.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   1861 Dec 14 06:38 PilotTCPServer.py
+-rwxr-xr-x  1 usatlas1 usatlas   1509 Apr 23  2015 PilotYamplServer.py
+-rw-r--r--  1 usatlas1 usatlas    163 Mar  4 07:58 PoolFileCatalog.xml
+-rwxr-xr-x  1 usatlas1 usatlas   4281 Apr 23  2015 ProxyGuard.py
+-rwxr-xr-x  1 usatlas1 usatlas  98440 Feb  5 11:04 RunJob.py
+-rwxr-xr-x  1 usatlas1 usatlas  23836 Jul  5  2018 RunJobAnselm.py
+-rwxr-xr-x  1 usatlas1 usatlas  36685 Jul  5  2018 RunJobArgo.py
+-rwxr-xr-x  1 usatlas1 usatlas  28525 Jul  5  2018 RunJobEdison.py
+-rwxr-xr-x  1 usatlas1 usatlas 219634 Dec  5 14:31 RunJobEvent.py
+-rwxr-xr-x  1 usatlas1 usatlas   2323 May  2  2016 RunJobFactory.py
+-rwxr-xr-x  1 usatlas1 usatlas   3069 Apr 23  2015 RunJobHPC.py
+-rwxr-xr-x  1 usatlas1 usatlas  28561 Jul  5  2018 RunJobHopper.py
+-rwxr-xr-x  1 usatlas1 usatlas  87735 May  2  2018 RunJobHpcEvent.py
+-rwxr-xr-x  1 usatlas1 usatlas   4649 Sep 28  2016 RunJobHpcarcEvent.py
+-rwxr-xr-x  1 usatlas1 usatlas   2072 Apr 23  2015 RunJobMira.py
+-rwxr-xr-x  1 usatlas1 usatlas   2050 Apr 23  2015 RunJobNormal.py
+-rwxr-xr-x  1 usatlas1 usatlas  29680 Jul  5  2018 RunJobTitan.py
+-rwxr-xr-x  1 usatlas1 usatlas  36922 Feb  5 11:04 RunJobUtilities.py
+-rw-r--r--  1 usatlas1 usatlas  26456 Mar  4 07:49 RunJobUtilities.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  20984 May  2  2016 S3ObjectstoreHttpSiteMover.py
+-rwxr-xr-x  1 usatlas1 usatlas  22167 Jul 13  2017 S3ObjectstorePresignedURLSiteMover.py
+-rwxr-xr-x  1 usatlas1 usatlas  27940 Mar 23  2017 S3ObjectstoreSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  21795 Mar  4 07:49 S3ObjectstoreSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   7454 May  2  2016 S3SiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   5621 Mar  4 07:49 S3SiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   5401 Apr  5  2018 Singularity.py
+-rw-r--r--  1 usatlas1 usatlas   4394 Mar  4 07:49 Singularity.pyc
+-rwxr-xr-x  1 usatlas1 usatlas    732 Aug  9  2017 Site.py
+-rw-r--r--  1 usatlas1 usatlas   1186 Mar  4 07:49 Site.pyc
+-rwxr-xr-x  1 usatlas1 usatlas 105113 Jul  5  2018 SiteInformation.py
+-rw-r--r--  1 usatlas1 usatlas  66043 Mar  4 07:49 SiteInformation.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   3248 Apr 23  2015 SiteInformationFactory.py
+-rw-r--r--  1 usatlas1 usatlas   2340 Mar  4 07:49 SiteInformationFactory.pyc
+-rwxr-xr-x  1 usatlas1 usatlas 121268 Jan 17  2018 SiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  80137 Mar  4 07:49 SiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   8489 May  2  2016 SiteMoverFarm.py
+-rw-r--r--  1 usatlas1 usatlas   6065 Mar  4 07:49 SiteMoverFarm.pyc
+-rwxr-xr-x  1 usatlas1 usatlas    446 Apr 23  2015 StoppableThread.py
+-rwxr-xr-x  1 usatlas1 usatlas   1197 Apr 23  2015 SysLog.py
+-rw-r--r--  1 usatlas1 usatlas   1666 Mar  4 07:49 SysLog.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  10422 Sep 28  2016 ThreadPool.py
+-rwxr-xr-x  1 usatlas1 usatlas   4262 Jul  5  2018 TimerCommand.py
+-rw-r--r--  1 usatlas1 usatlas   3892 Mar  4 07:49 TimerCommand.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  12582 Feb  5 11:04 UpdateHandler.py
+-rwxr-xr-x  1 usatlas1 usatlas   3453 Apr 23  2015 VmPeak.py
+-rwxr-xr-x  1 usatlas1 usatlas   4607 Feb 11  2016 WatchDog.py
+-rwxr-xr-x  1 usatlas1 usatlas      0 Apr 23  2015 __init__.py
+-rwxr-xr-x  1 usatlas1 usatlas  38290 Jul 28  2016 aria2cSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  22396 Mar  4 07:49 aria2cSiteMover.pyc
+-rw-r--r--  1 usatlas1 usatlas   1554 Mar  4 07:50 athena_stderr.txt
+-rw-r--r--  1 usatlas1 usatlas 142302 Mar  4 07:58 athena_stdout.txt
+-rwxr-xr-x  1 usatlas1 usatlas   1584 May  2  2016 build.py
+-rwxr-xr-x  1 usatlas1 usatlas  15485 Feb 11  2016 castorSvcClassSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   9891 Mar  4 07:49 castorSvcClassSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas    246 May  2  2016 configSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas    559 Mar  4 07:49 configSiteMover.pyc
+-rw-r--r--  1 usatlas1 usatlas      7 Mar  4 07:49 cpid.txt
+-rwxr-xr-x  1 usatlas1 usatlas  30868 Feb 11  2016 curlSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  16963 Mar  4 07:49 curlSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   9107 Feb 11  2016 dCacheLFCSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   6896 Mar  4 07:49 dCacheLFCSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  30522 Feb 11  2016 dCacheSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  19567 Mar  4 07:49 dCacheSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   9685 Jul  5  2018 environment.py
+-rw-r--r--  1 usatlas1 usatlas   4915 Mar  4 07:49 environment.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   5451 Apr 23  2015 futil.py
+-rw-r--r--  1 usatlas1 usatlas   6319 Mar  4 07:49 futil.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   2282 Apr 23  2015 glexec_aux.py
+-rwxr-xr-x  1 usatlas1 usatlas  17253 Aug 31  2015 glexec_utils.py
+-rw-r--r--  1 usatlas1 usatlas  17719 Mar  4 07:49 jobState-4265075871.pickle
+-rw-r--r--  1 usatlas1 usatlas   1419 Mar  4 07:49 job_setup.sh
+-rwxr-xr-x  1 usatlas1 usatlas  28627 Feb 11  2016 lcgcp2SiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  15282 Mar  4 07:49 lcgcp2SiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  34407 Feb 11  2016 lcgcpSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  18586 Mar  4 07:49 lcgcpSiteMover.pyc
+-rw-r--r--  1 usatlas1 usatlas    604 Mar  4 07:57 memory_monitor_output.txt
+-rw-r--r--  1 usatlas1 usatlas    295 Mar  4 07:57 memory_monitor_summary.json_snapshot
+drwxr-xr-x  2 usatlas1 usatlas   4096 Mar  4 07:49 movers
+-rwxr-xr-x  1 usatlas1 usatlas  11179 Jun 14  2016 mvSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   8690 Mar  4 07:49 mvSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   9674 Apr 23  2015 myproxyUtils.py
+-rw-r--r--  1 usatlas1 usatlas   4708 Mar  4 07:49 newJobDef.py
+-rw-r--r--  1 usatlas1 usatlas   5213 Mar  4 07:49 newJobDef.pyc
+-rwxr-xr-x  1 usatlas1 usatlas   5242 Sep 11  2017 objectstoreSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   3779 Mar  4 07:49 objectstoreSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas 179637 Feb  5 11:04 pUtil.py
+-rw-r--r--  1 usatlas1 usatlas 130639 Mar  4 07:49 pUtil.pyc
+-rw-rw-r--  3 usatlas1 usatlas 900408 Mar  4 07:49 panda.0304123808.803789.lib._17303704.16751001456.lib.tgz
+-rw-r--r--  1 usatlas1 usatlas   4548 Mar  4 07:49 pandaJobData.out
+-rw-r--r--  1 usatlas1 usatlas   1936 Mar  4 07:58 pandatracerlog.txt
+drwxr-xr-x  7 usatlas1 usatlas   4096 Mar  4 07:50 pandawnutil
+-rwxr-xr-x  1 usatlas1 usatlas 159408 Dec  5 14:31 pilot.py
+-rw-r--r--  1 usatlas1 usatlas    200 Mar  4 07:49 pilotlog.txt
+-rwxr-xr-x  1 usatlas1 usatlas  13175 Oct 11 06:46 processes.py
+-rw-r--r--  1 usatlas1 usatlas  11771 Mar  4 07:49 processes.pyc
+drwxr-xr-x  3 usatlas1 usatlas   4096 Mar  4 07:49 radical
+-rwxr-xr-x  1 usatlas1 usatlas  18248 Feb 11  2016 rfcpLFCSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  11904 Mar  4 07:49 rfcpLFCSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  81397 Mar  1 11:21 runGen-00-00-02
+-rwxr-xr-x  1 usatlas1 usatlas  32907 Jun  4  2018 runGen.py
+-rw-r--r--  1 usatlas1 usatlas      0 Mar  4 07:49 runjob.stderr
+drwxr-xr-x 11 usatlas1 usatlas   4096 Mar  4 07:49 saga
+drwxr-xr-x 10 usatlas1 usatlas   4096 Mar  4 07:50 src
+-rwxr-xr-x  1 usatlas1 usatlas   4737 Apr 23  2015 stormSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas   3674 Mar  4 07:49 stormSiteMover.pyc
+-rw-r--r--  1 usatlas1 usatlas     36 Mar  4 07:49 t0_times.txt
+-rwxr-xr-x  1 usatlas1 usatlas   8743 Apr 23  2015 timed_command.py
+-rw-r--r--  1 usatlas1 usatlas   6353 Mar  4 07:49 timed_command.pyc
+drwxr-xr-x  4 usatlas1 usatlas   4096 Mar  4 07:58 workDir
+-rwxr-xr-x  1 usatlas1 usatlas  10820 Apr 28  2015 wrapper.py
+-rwxr-xr-x  1 usatlas1 usatlas    592 Apr 28  2015 wrapperexceptions.py
+-rwxr-xr-x  1 usatlas1 usatlas  14982 Apr 28  2015 wrapperutils.py
+-rwxr-xr-x  1 usatlas1 usatlas  44677 May  2  2016 xrdcpSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  28993 Mar  4 07:49 xrdcpSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  43993 May  2  2016 xrootdObjectstoreSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  29098 Mar  4 07:49 xrootdObjectstoreSiteMover.pyc
+-rwxr-xr-x  1 usatlas1 usatlas  32474 May  2  2016 xrootdSiteMover.py
+-rw-r--r--  1 usatlas1 usatlas  20724 Mar  4 07:49 xrootdSiteMover.pyc
+execute script: Running script failed : StatusCode=1
