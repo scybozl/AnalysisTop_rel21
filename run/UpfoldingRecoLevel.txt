@@ -59,8 +59,8 @@ DoTight Both
 DoLoose Data
 
 # definitions used for OR
-ElectronPt 20000
-MuonPt 20000
+ElectronPt 28000
+MuonPt 28000
 JetPt 25000
 
 # Turn on MetaData to pull IsAFII from metadata
@@ -337,7 +337,6 @@ SAVE
 ########################
 
 SUB emu_basic
-EL_N_OR_MU_N 28000 >= 1
 EL_N 20000 >= 1
 MU_N 20000 >= 1
 EL_N 28000 == 1

@@ -23,7 +23,7 @@ TauCollectionName None
 PhotonCollectionName None
 
 TruthCollectionName TruthParticles
-TruthJetCollectionName None
+TruthJetCollectionName AntiKt4TruthDressedWZJets
 TruthLargeRJetCollectionName None
 TopPartonHistory ttbar
 TopParticleLevel True
