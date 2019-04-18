@@ -20,7 +20,8 @@ except:
     sys.exit()
 
 filename = 'XSection-MC15-13TeV.data'
-tdp = TopExamples.analysis.TopDataPreparation(os.getenv('ROOTCOREBIN') + '/data/TopDataPreparation/' + filename)
+#tdp = TopExamples.analysis.TopDataPreparation(os.getenv('ROOTCOREBIN') + '/data/TopDataPreparation/' + filename)
+tdp = TopExamples.analysis.TopDataPreparation("/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/dev/AnalysisTop/TopDataPreparation/" + filename)
 
 print 'Using', tdp.getFilename()
 print ''

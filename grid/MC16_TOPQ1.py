@@ -3,7 +3,13 @@
 import TopExamples.grid
 
 TopExamples.grid.Add("TOPQ1_ttbar_PowPy8").datasets = [
-    "mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e5458_s3126_r9364_r9315_p3404"
+#"mc16_13TeV.411054.PowhegPythia8EvtGen_ttbar_172p00_dilep.deriv.DAOD_TOPQ1.e6696_a875_r9364_p3629"
+#"mc16_13TeV.411053.PowhegPythia8EvtGen_ttbar_171p00_dilep.deriv.DAOD_TOPQ1.e6696_a875_r9364_p3629"
+#"mc16_13TeV.411054.PowhegPythia8EvtGen_ttbar_172p00_dilep.deriv.DAOD_TOPQ1.e6696_a875_r9364_p3629"
+"mc16_13TeV.411057.PowhegPythia8EvtGen_ttbar_173p00_dilep.deriv.DAOD_TOPQ1.e6696_a875_r9364_p3629"
+#"mc16_13TeV.411058.PowhegPythia8EvtGen_ttbar_174p00_dilep.deriv.DAOD_TOPQ1.e6696_a875_r9364_p3629"
+
+#    "mc16_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e5458_s3126_r9364_r9315_p3404"
 #    "mc16_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e6337_e5984_a875_r9364_r9315_p3554"
 #   "mc16_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_TOPQ1.e6337_e5984_s3126_r9364_r9315_p3554"
 #    "mc16_13TeV.410557.PowhegHerwig7EvtGen_H7UE_tt_hdamp258p75_704_SingleLep.deriv.DAOD_TOPQ1.e6366_e5984_a875_r10201_r10210_p3554"

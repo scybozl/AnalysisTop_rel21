@@ -1,4 +1,4 @@
-setupATLAS
+#setupATLAS
 lsetup panda
 export RUCIO_ACCOUNT=$USER
 lsetup rucio

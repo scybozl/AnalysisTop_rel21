@@ -24,12 +24,12 @@ config.code          = 'top-xaod'
 config.settingsFile  = 'UpfoldingRecoLevel.txt'
 
 config.gridUsername  = 'lscyboz'
-config.suffix        = 'x'
+config.suffix        = 'mt173p0-t1'
 config.excludedSites = ''
 config.noSubmit      = False
 config.mergeType     = 'Default' #'None', 'Default' or 'xAOD'
 config.destSE        = '' #This is the default (anywhere), or try e.g. 'UKI-SOUTHGRID-BHAM-HEP_LOCALGROUPDISK'
-config.forceSite     = 'MPPMU'
+#config.forceSite     = 'MPPMU'
 #config.groupProduction = True # for group production only; if True, gridUsername must be e.g. 'phys-top'
 # by default the requested memory is set to 2GB, if you need to increase this, please disable the line below!!!
 # config.memory = '4000' 

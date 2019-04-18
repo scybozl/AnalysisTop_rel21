@@ -3,6 +3,13 @@
 import TopExamples.grid
 import TopExamples.ami
 
+DATATOP = [
+          "data15_13TeV.AllYear.physics_Main.PhysCont.DAOD_TOPQ1.grp15_v01_p3601",
+          "data16_13TeV.AllYear.physics_Main.PhysCont.DAOD_TOPQ1.grp16_v01_p3601",
+          "data17_13TeV.AllYear.physics_Main.PhysCont.DAOD_TOPQ1.grp17_v01_p3601",
+          "data18_13TeV.AllYear.physics_Main.PhysCont.DAOD_TOPQ1.grp18_v02_p3544_p3553_p3583"
+]
+
 # Period containers
 DATA15 = ['data15_13TeV.periodA.physics_Main.PhysCont.DAOD_{}.grp15_v01_p3180',
           'data15_13TeV.periodC.physics_Main.PhysCont.DAOD_{}.grp15_v01_p3180',
@@ -301,6 +308,8 @@ DATA16RUN = [ 'data16_13TeV.00297730.physics_Main.deriv.DAOD_{}.r9264_p3083_p318
 
 # Use the period containers which have removed duplicate runs with different tags
 DATA17RUN = [ ]
+
+TopExamples.grid.Add('Data_TOPQ1').datasets = DATATOP
 
 # Individual runs 
 TopExamples.grid.Add('Data15Runs_TOPQ1').datasets = [i.format('TOPQ1') for i in DATA15RUN]
